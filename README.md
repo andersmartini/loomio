@@ -1,4 +1,4 @@
-<h1><a href="https://www.loomio.org"> <img src="app/assets/images/logo-orange.png" alt="Loomio"/></a> </h1>
+<h1><a href="https://www.loomio.org"> <img src="logo_path" alt="Loomio"/></a> </h1>
  
 [![Build Status](https://travis-ci.org/loomio/loomio.png?branch=master)](https://travis-ci.org/loomio/loomio) 
 [![Code Climate](https://codeclimate.com/github/loomio/loomio.png)](https://codeclimate.com/github/loomio/loomio) 
