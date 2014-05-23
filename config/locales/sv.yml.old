@@ -27,43 +27,43 @@ sv:
       no_invitations_remaining: "Inga fler inbjudningar återstår."
     mailer:
       invitation_instructions:
-        subject: 'Någon har bjudit in dig till sin Loomiokategori.'
+        subject: 'Någon har bjudit in dig till sin Loomiogrupp.'
   error:
     access_denied: "Du saknar behörighet att göra detta."
-    cant_join_subgroup: "Du kan inte gå med i en underkategori om du inte är medlem i huvudkategorin."
+    cant_join_subgroup: "Du kan inte gå med i en undergrupp om du inte är medlem i huvudgruppen."
     cant_modify_position: "Förslaget är stängt."
     cant_state_position: "Förslaget är stängt."
-    cant_view_member_profile: "Du kan inte se medlemmens profil för du är inte med i samma kategori."
+    cant_view_member_profile: "Du kan inte se medlemmens profil för du är inte med i samma grupp."
     contribution: "Logga in och ge ett bidrag."
     discussion_not_created: "Diskussionen kunde inte skapas."
     discussion_not_moved: "Du har inte behörighet att flytta denna diskussion till %{destination_group.name}"
-    group_not_archived: "Kategorin kunde inte sparas."
+    group_not_archived: "Gruppen kunde inte sparas."
     invalid_close_date: "Ogiltigt slutdatum, kontrollera datumet."
     invalid_email: "Ange minst en giltig emailadress"
     image_upload_fail: "Kunde inte ladda upp bilden. Kontrollera att bilden är mindre än 1 MB samt att det är en .jpeg, .png, eller .gif fil."
     motion_closing_inputs: "Ogiltigt slutdatum"
     motion_outcome_not_created: "Kan inte publicera resultatet."
     motion_outcome_not_updated: "Kan inte uppdatera resultatet."
-    only_group_coordinator_destroy: "Du kan inte lämna denna kategorin för du är den enda koordinatorn. Du kan deaktivera din kategori genom att välja mellan kliv av eller <a href='%{add_coordinator}'>lägg till ny koordinator</a> för kategorin."
-    only_group_coordinator_remove_admin: "Kategorin måste ha en koordinator. Vill du lägga till ytterligare en koordinator för kategorin?"
+    only_group_coordinator_destroy: "Du kan inte lämna denna gruppen för du är den enda koordinatorn. Du kan deaktivera din grupp genom att välja mellan kliv av eller <a href='%{add_coordinator}'>lägg till ny koordinator</a> för gruppen."
+    only_group_coordinator_remove_admin: "Gruppen måste ha en koordinator. Vill du lägga till ytterligare en koordinator för gruppen?"
     permission_to_invite: "Du har inte behörighet att bjuda in nya medlemmar"
     position_not_updated: "Kunde inte uppdatera ståndpunkten."
     settings_not_updated: "Dina inställningar kunde inte uppdateras."
     group_request_already_accepted: "Tyvärr! Den här inbjudan är ogiltig, eller har redan godkänts."
     group_request_invalid_token: "Tyvärr! Detta är ingen giltig token"
-    group_private_or_not_found: "Kunde inte hitta kategorin. \n\nDenna kategori kan vara sluten. Om du fick detta av någon per länk, be dem att bjuda in dig till kategorin."
-    group_already_setup: "Kategorin du försöker skapa finns redan."
+    group_private_or_not_found: "Kunde inte hitta gruppen. \n\nDenna grupp kan vara sluten. Om du fick detta av någon per länk, be dem att bjuda in dig till gruppen."
+    group_already_setup: "Gruppen du försöker skapa finns redan."
     proposal_already_exists: "Det finns redan ett öppet förslag för denna diskussionen."
-    user_with_email_address_already_in_group: "En användare med den emailadressen finns redan i denna kategorin."
-    you_have_already_requested_membership: "Du har redan begärt medlemskap i denna kategorin."
-    you_are_already_a_member_of_this_group: "Du är redan medlem i denna kategori."
+    user_with_email_address_already_in_group: "En användare med den emailadressen finns redan i denna gruppen."
+    you_have_already_requested_membership: "Du har redan begärt medlemskap i denna gruppen."
+    you_are_already_a_member_of_this_group: "Du är redan medlem i denna grupp."
     not_found: "Kunde inte hitta detta. Det kan ha raderats."
   alert:
-    duplicate_email: "%{which_email} finns redan i kategorin."
+    duplicate_email: "%{which_email} finns redan i gruppen."
   notice:
     admin_rights_removed: "%{which_user} koordinatorrättigheter har tagits bort."
-    user_added: "%{user_email_or_name} har lagts till denna kategorin."
-    new_user_added: "%{user_email_or_name} läggs till denna kategorin så fort de har skapat ett Loomiokonto."
+    user_added: "%{user_email_or_name} har lagts till denna gruppen."
+    new_user_added: "%{user_email_or_name} läggs till denna gruppen så fort de har skapat ett Loomiokonto."
     member_removed: "Medlemmen är borttagen."
     membership_approved: "Medlemskapet är godkänt."
     membership_request_canceled: "medlemskapsförfrågan cancellerad."
@@ -77,8 +77,8 @@ sv:
         one: "%{count} tillagd medlem"
         other: "%{count} tillagda medlemmar"
       existing_member:
-        one: "%{count} medlem finns i kategorin"
-        other: "%{count} medlemmar finns i kategorin"
+        one: "%{count} medlem finns i gruppen"
+        other: "%{count} medlemmar finns i gruppen"
       sent:
         one: "%{count} skickad inbjudning"
         other: "%{count} skickade inbjudningar"
@@ -94,9 +94,9 @@ sv:
     membership_request_already_canceled: "Medlemskapsförfrågan har redan cancellerats."
     position_not_submitted: "Din ståndpunkt kunde inte skickas"
     proposal_not_created: "Förslaget kunde inte skapas"
-    user_already_admin: "%{which_user} är redan koordinator för denna kategori."
-    user_already_member: "%{which_user} är redan medlem i denna kategori."
-    user_not_admin: "Tyvärr, %{which_user} du måste vara koordinator för denna kategori för att ha access till detta."
+    user_already_admin: "%{which_user} är redan koordinator för denna grupp."
+    user_already_member: "%{which_user} är redan medlem i denna grupp."
+    user_not_admin: "Tyvärr, %{which_user} du måste vara koordinator för denna grupp för att ha access till detta."
   success:
     added_to_group: "Du har lagts till i  %{which_group}."
     close_date_changed: "Slutdatum har ändrats."
@@ -104,12 +104,12 @@ sv:
     discussion_deleted: "Diskussionen är borttagen."
     discussion_moved: "Diskussionen har flyttats till %{group_name}"
     emails_sending: "Sänder email."
-    group_archived: "Kategorin är sparad."
-    group_created: "Kategorin är skapad."
-    members_added: "Medlemmar har lagts till kategorin."
+    group_archived: "Gruppen är sparad."
+    group_created: "Gruppen är skapad."
+    members_added: "Medlemmar har lagts till gruppen."
     membership_requested: "Du har begärt att gå med i  %{which_group}. Du kommer att få ett meddelande så fort din begäran har godkänts."
-    motion_closed: "Förslaget är stängt. Om du vill, kan du ange ett resultat nedan och skicka till din kategori."
-    motion_outcome_created: "Grattis, du har progress på ditt förslag och medlemmarna i din kategori har notifierats."
+    motion_closed: "Förslaget är stängt. Om du vill, kan du ange ett resultat nedan och skicka till din grupp."
+    motion_outcome_created: "Grattis, du har progress på ditt förslag och medlemmarna i din grupp har notifierats."
     motion_outcome_updated: "Förslagets status har uppdaterats."
     position_submitted: "Ståndpunkt skickad"
     position_updated: "Ståndpunkten är uppdaterad."
@@ -155,7 +155,7 @@ sv:
     blog: 'Blogga'
     contact: 'Kontakta'
     privacy: 'Slutet'
-    public_groups: 'Öppna kategorier'
+    public_groups: 'Öppna grupper'
     terms: 'Villkor'
   inbox:
     dropdown-btn: 'Inbox'
@@ -173,17 +173,17 @@ sv:
     user_mentioned: "har nämnt dig i en kommentar i"
     membership_requested: "har begärt medlemskap i"
     membership_request_approved: 'godkände din begäran att gå med'
-    user_added_to_group: "har lagt till dig i kategorin"
+    user_added_to_group: "har lagt till dig i gruppen"
     motion_closing_soon: "Förslaget stänger snart"
     motion_blocked: "har blockerat förslaget"
     motion_outcome_created: "publicerade en ny status för förslaget"
     motion_outcome_updated: "uppdaterade en ny status för förslaget"
   edit_discussion_context: "Redigera diskussionsinnehållet"
-  request_new_group: "Starta en kategori"
-  start_new_group: "Starta en ny kategori"
+  request_new_group: "Starta en grupp"
+  start_new_group: "Starta en ny grupp"
   start_new_group_hint: "För att börja fatta beslut"
-  find_a_group: "Hitta en kategori"
-  find_a_group_hint: "För att utforska öppna kategorier"
+  find_a_group: "Hitta en grupp"
+  find_a_group_hint: "För att utforska öppna grupper"
   no_group_header: "Välkommen till Loomio Beta"
   empty_notifications: "Du har inte fått några notifieringar ännu."
   see_all_notifications: "Se alla notifieringar"
@@ -199,23 +199,23 @@ sv:
   generic_confirm: "Är du säker?"
   discussion_helper_text:
     header: "Välkommen till din första diskussion"
-    message: "<p>Ämnet syns högst upp på sidan, med innehållet under.</p><p>Diskussionen är till vänster och beslut kommer upp till höger. Om du tycker att kategorin är redo att fatta ett beslut kan du göra ett förslag för kategorin att beakta.</p>"
+    message: "<p>Ämnet syns högst upp på sidan, med innehållet under.</p><p>Diskussionen är till vänster och beslut kommer upp till höger. Om du tycker att gruppen är redo att fatta ett beslut kan du göra ett förslag för gruppen att beakta.</p>"
   group_helper_text:
-    header: "Välkommen till din nya kategori!"
-    message: "<p>Detta är <strong>kategorisidan</strong>. Till vänster finns en lista på kategorins alla diskussioner.</p><p>När du vill att kategorin ska diskutera ett annat ämne, starta en ny diskussion.</p>"
+    header: "Välkommen till din nya grupp!"
+    message: "<p>Detta är <strong>Gruppsidan</strong>. Till vänster finns en lista på gruppens alla diskussioner.</p><p>När du vill att gruppen ska diskutera ett annat ämne, starta en ny diskussion.</p>"
   dashboard_helper_text:
     header: "Välkommen till din startsida"
-    message: "<p>Startsidan visar alla pågående diskussioner i alla kategorier du är med i.</p><p>Du kan starta en diskussion om ett nytt ämne genom att klicka på knappen \"Starta en diskussion\"</p>"
+    message: "<p>Startsidan visar alla pågående diskussioner i alla grupper du är med i.</p><p>Du kan starta en diskussion om ett nytt ämne genom att klicka på knappen \"Starta en diskussion\"</p>"
   prompt_visitor_to_authenticate:
-    header: "Logga in eller gå med i kategorin för att delta"
-    body: "Om du är medlem i denna kategorin, behöver du logga in för att delta."
+    header: "Logga in eller gå med i gruppen för att delta"
+    body: "Om du är medlem i denna gruppen, behöver du logga in för att delta."
   prompt_user_to_join:
-    header: "Gå med i kategorin för att delta"
-    body: "För att lämna en kommentar eller rösta, behöver du vara medlem i denna kategorin."
+    header: "Gå med i gruppen för att delta"
+    body: "För att lämna en kommentar eller rösta, behöver du vara medlem i denna gruppen."
   setup_steps_title: "Nästa steg:"
   setup_step_1: "Titta på diksussionsexemplet"
   setup_step_2: "Starta din första diskussion"
-  setup_step_3: "Bjud in deltagare till din kategori"
+  setup_step_3: "Bjud in deltagare till din grupp"
   invite_people: "Bjud in deltagare"
   no_invitations_button: "Inga inbjudningar kvar"
   number_pending: '%{pending} avvaktar'
@@ -230,24 +230,24 @@ sv:
   subject_placeholder: "Skriv ett ämne"
   message_error: "Ange meddelande"
   message_placeholder: "Skriv ett meddelande till medlemmarna i %{which_group}."
-  email_group_members: "Emaila medlemmarna i kategorin"
-  edit_group_settings: "Redigera kategoriinställningarna"
-  leave_group: "Lämna kategorin"
-  confirm_leave_hidden_group: "Är du säker på att du vill lämna %{which_group}? Du kommer även att tas bort från alla underkategorier."
+  email_group_members: "Emaila medlemmarna i gruppen"
+  edit_group_settings: "Redigera gruppinställningarna"
+  leave_group: "Lämna gruppen"
+  confirm_leave_hidden_group: "Är du säker på att du vill lämna %{which_group}? Du kommer även att tas bort från alla undergrupper."
   confirm_leave_group: "Är du säker på att du vill lämna %{which_group}?"
-  deactivate_group: "Deaktivera kategorin"
-  confirm_deactivate_group: "Vänta!!! Är du säker på att du vill deaktivera %{which_group}? Du kommer inte längre att kunna se kategorin. Men, om du skulle vilja ha kategorin tillbaka kan du be oss att återställa den genom att skicka ett email till contact@loomio.org."
+  deactivate_group: "Deaktivera gruppen"
+  confirm_deactivate_group: "Vänta!!! Är du säker på att du vill deaktivera %{which_group}? Du kommer inte längre att kunna se gruppen. Men, om du skulle vilja ha gruppen tillbaka kan du be oss att återställa den genom att skicka ett email till contact@loomio.org."
   invited_users: "Inbjudna medlemmar"
   members: "Medlemmar"
-  confirm_remove_user: "Är du säker på att du vill ta bort %{which_user} från kategorin?"
+  confirm_remove_user: "Är du säker på att du vill ta bort %{which_user} från gruppen?"
   remove_coordinator: "Ta bort koordinator"
-  confirm_remove_coordinator: "Är du säker på att du inte vill ha kvar %{which_user} som koordinator för denna kategorin?"
+  confirm_remove_coordinator: "Är du säker på att du inte vill ha kvar %{which_user} som koordinator för denna gruppen?"
   make_coordinator: "Gör till koordinator"
-  confirm_make_coordinator: "Är du säker på att du vill ha %{which_user} som koordinator för denna kategorin?"
-  confirm_remove_member: 'Är du säker på att du vill ta bort den här medlemmen från kategorin?'
-  want_to_invite_html: "Vill du <a href='%{link}'>bjuda in deltagare</a> till denna kategorin?"
+  confirm_make_coordinator: "Är du säker på att du vill ha %{which_user} som koordinator för denna gruppen?"
+  confirm_remove_member: 'Är du säker på att du vill ta bort den här medlemmen från gruppen?'
+  want_to_invite_html: "Vill du <a href='%{link}'>bjuda in deltagare</a> till denna gruppen?"
   membership_requests: "Medlemsförfrågningar"
-  confirm_approve_membership_request: "Är du säker på att du vill lägga till %{which_user} i kategorin?"
+  confirm_approve_membership_request: "Är du säker på att du vill lägga till %{which_user} i gruppen?"
   cancel_membership_request: "Begäran att ångra"
   ignore_request: "Ignorera förfrågan"
   ignore: "Ignorera"
@@ -255,34 +255,34 @@ sv:
   membership_requested: "Förfrågan om medlemskap"
   request_membership: "Medlemsförfrågan"
   ask_to_join_group: "Be att få gå med"
-  confirm_remove_membership_request: "Är du säker på att du vill ta tillbaka din medlemsförfrågan till denna kategorin?"
-  no_pending_membership_requests: "Det finns för tillfället inga utestående medlemsförfrågningar för denna kategori."
-  subgroups: "Underkategorier"
-  create_a_subgroup: "Skapa en underkategori"
+  confirm_remove_membership_request: "Är du säker på att du vill ta tillbaka din medlemsförfrågan till denna gruppen?"
+  no_pending_membership_requests: "Det finns för tillfället inga utestående medlemsförfrågningar för denna grupp."
+  subgroups: "Undergrupper"
+  create_a_subgroup: "Skapa en undergrupp"
   select_members_to_add: "Välj medlemmar att lägga till i %{which_group}"
-  empty_parent_group: "Lägg till medlemmar i huvudKategorin först."
+  empty_parent_group: "Lägg till medlemmar i huvudgruppen först."
   invite_members: "Bjud in medlemmar"
-  new_subgroup: "Ny underkategori"
-  create_subgroup: "Skapa underkategori"
-  creating_subgroup: "Skapar underkategori"
+  new_subgroup: "Ny undergrupp"
+  create_subgroup: "Skapa undergrupp"
+  creating_subgroup: "Skapar undergrupp"
   hidden: "Dold"
   public: "Öppen"
-  new_group: "Ny kategori"
-  create_group: "Skapa kategori"
-  creating_group: "Skapar kategori"
-  edit_group: "Redigera kategori"
-  update_group: "Uppdatera kategori"
-  updating_group: "Uppdaterar kategori"
+  new_group: "Ny grupp"
+  create_group: "Skapa grupp"
+  creating_group: "Skapar grupp"
+  edit_group: "Redigera grupp"
+  update_group: "Uppdatera grupp"
+  updating_group: "Uppdaterar grupp"
   start_a_discussion: "Starta en diskussion"
-  group_description: "kategoribeskrivning"
-  edit_group_description: "Redigera kategoridiskussionen"
-  group_subscription: "kategoriabonnemang"
+  group_description: "Gruppbeskrivning"
+  edit_group_description: "Redigera gruppdiskussionen"
+  group_subscription: "Gruppabonnemang"
   group_request:
-    neighbourhood_support_group: "t. ex. Stödkategori i Grannskapet"
+    neighbourhood_support_group: "t. ex. Stödgrupp i Grannskapet"
     confirmation:
       title: Du är nästan klar! Kolla din email.
       body_html: |+
-        Vi har skickat ett email till dig med en inbjudan att starta din kategori.
+        Vi har skickat ett email till dig med en inbjudan att starta din grupp.
 
         Om du inte har fått något i din inbox inom några minuter, emaila oss på <a href='mailto:contact@loomio.org'>contact@loomio.org</a>.
 
@@ -305,11 +305,11 @@ sv:
   see_more: "Läs mer"
   create_new_proposal: "Skapa nytt förslag"
   empty_decision_list_html: "Är ni redo att fatta beslut? <br> Vem som helst kan starta ett förslag."
-  empty_decision_index: "Denna kategori har ännu inte fattat några beslut."
+  empty_decision_index: "Denna grupp har ännu inte fattat några beslut."
   empty_discussion_list: "Det finns ännu inga aktiviteter i denna diskussionen."
-  empty_discussion_index: "Det finns inga diskussioner i någon av dina kategorier"
-  empty_discussion_index_group: "Denna kategorin har ännu inte några diskussioner."
-  private_group_discussion_display: "Denna kategori är sluten. Diskussionerna är endast synliga för dess medlemmar. Om du vill delta, kan du be att få gå med."
+  empty_discussion_index: "Det finns inga diskussioner i någon av dina grupper"
+  empty_discussion_index_group: "Denna gruppen har ännu inte några diskussioner."
+  private_group_discussion_display: "Denna grupp är sluten. Diskussionerna är endast synliga för dess medlemmar. Om du vill delta, kan du be att få gå med."
   discussion_context:
     started_html: "Startades %{when} av <a href='%{link}' class='%{link_class}'>%{who}</a>"
     last_edited_html: "Redigerades senast %{when} av <a href='%{link}' class='%{link_class}'>%{who}</a>"
@@ -331,7 +331,7 @@ sv:
   markdown_settings_more_info: "Mer information..."
   edit_discussion: "Redigera diskussionen"
   move_discussion: "Flytta diskussionen"
-  move_discussion_to_hidden_group: "Denna diskussion är för närvarande öppen. Flyttas den till denna dolda kategori blir den sluten."
+  move_discussion_to_hidden_group: "Denna diskussion är för närvarande öppen. Flyttas den till denna dolda grupp blir den sluten."
   move_discussion_where: "Vart vill du flytta denna diskussionen?"
   delete_discussion: "Ta bort diskussionen"
   confirm_delete_discussion: "Är du säker på att du vill ta bort denna diskussionen permament?"
@@ -352,7 +352,7 @@ sv:
   yes_position: "Jag håller med"
   yes_details: "Jag håller med om detta och vill att det går vidare"
   abstain_position: "Jag avstår"
-  abstain_details: "Jag är OK med att kategorin fattar beslut utan mig."
+  abstain_details: "Jag är OK med att gruppen fattar beslut utan mig."
   no_position: "Jag håller inte med"
   no_details: "Jag tror att vi skulle kunna hitta något bättre än det här."
   block_position: "Jag blockerar"
@@ -371,33 +371,33 @@ sv:
       abstain: "avstod"
       block: "blockerade"
   help:
-    coordinating: 'Koordinera din Loomiokategori'
-    coordinating_details: "Som koordinator är du ansvarig att administrera din Loomiokategori och bjuda in\nalla deltagare. Förutom att lära sig använda en ny mjukvara, kommer din kategori \natt lära sig nya processer att samarbeta mer effektivt samt att fatta bra beslut \ntillsammans. Här är några tips för att hjälpa din kategori att lyckas:\n"
+    coordinating: 'Koordinera din Loomiogrupp'
+    coordinating_details: "Som koordinator är du ansvarig att administrera din Loomiogrupp och bjuda in\nalla deltagare. Förutom att lära sig använda en ny mjukvara, kommer din grupp \natt lära sig nya processer att samarbeta mer effektivt samt att fatta bra beslut \ntillsammans. Här är några tips för att hjälpa din grupp att lyckas:\n"
     different_ways: 'Olika sätt att använda Loomio'
     engaging_html: |
-      <h2>Tips för hur du engagerar din kategori</h2>
+      <h2>Tips för hur du engagerar din grupp</h2>
       <p> Deltagarna kommer att bli entusiastiska och vilja delta när det finns ett engagerande
-      förslag på bordet. Ett bra förslag innehåller en handlingsplan för kategorin, så
+      förslag på bordet. Ett bra förslag innehåller en handlingsplan för gruppen, så
       att det är direkt uppenbart vad det är ni ska bli överens eller inte överens om.
-      Tänk på de nuvarande diskussioner/beslut som din kategori är engagerade i, på plats
+      Tänk på de nuvarande diskussioner/beslut som din grupp är engagerade i, på plats
       eller per email, och hur mycket lättare det skulle kunna vara med Loomio.</p>
-      <p>Om din kategori just har startat, kan du börja med ett enkelt beslut att ge
+      <p>Om din grupp just har startat, kan du börja med ett enkelt beslut att ge
       alla en chans att lära känna verktyget och se beslutsprocessen i handling.</p>
       <p>Ett annat bra sätt att få personer att engagera sig i en diskussion är att använda funktionen
       @mention för att få med någon specifik person, vilket kommer att skicka ett email och informera dem om att
       de har blivit omnämnda i ett inlägg.</p>
     example1_html: |
-      <h3>Din kategori behöver diskutera ett ämne och utveckla ett förslag tillsammans</h3>
+      <h3>Din grupp behöver diskutera ett ämne och utveckla ett förslag tillsammans</h3>
       <p>Strategi: Diskutera ämnet en stund innan ni arbetar fram ett förslag.</p>
       <p>Diskussioner når ofta det bästa resultatet om ni bygger en gemensam förståelse
       om problemet innan ni väljer en specifik lösning. När personer får möjlighet att
       delta i processen kommer de att vara mer benägna att sluta upp kring resultatet.</p>
-    example2_html: "<h3>Du har redan ett förslag i åtanke och vill få med dig kategorin att gå vidare.</h3>\n<p>Strategi: Starta en diskussion om ett särskilt beslut och lägg fram förslaget direkt.</p> \n<p>Om du har ett tydligt resultat i åtanke, men vill se till att det inte finns några kritiska invändningar,\nkan du använda förslaget för att få snabb återkoppling inför ett beslut.</p>\n\
+    example2_html: "<h3>Du har redan ett förslag i åtanke och vill få med dig gruppen att gå vidare.</h3>\n<p>Strategi: Starta en diskussion om ett särskilt beslut och lägg fram förslaget direkt.</p> \n<p>Om du har ett tydligt resultat i åtanke, men vill se till att det inte finns några kritiska invändningar,\nkan du använda förslaget för att få snabb återkoppling inför ett beslut.</p>\n\
       <p>Du kan använda detta för att slutföra ett dokument, godkänna en ansökan, eller få sign-off på ett arbete.</p>\n"
     get_in_touch: "Kontakta oss"
     get_in_touch_description_html: "Om du har någon fråga eller vill ge feedback, <a href='%{link}'>skriv till oss</a>."
     getting_started: "Håller på att starta"
-    getting_started_description: "Till vänster, diskuterar kategorin ett ämne, utbyter idéer och information. När kategorin kommer fram till ett beslut, dyker det upp till höger."
+    getting_started_description: "Till vänster, diskuterar gruppen ett ämne, utbyter idéer och information. När gruppen kommer fram till ett beslut, dyker det upp till höger."
     getting_the_most: 'Hur du får mesta möjliga ut av Loomio'
     have_your_say: "Gör din röst hörd"
     have_your_say_details_html: |
@@ -411,14 +411,14 @@ sv:
     how_it_works: "Hur det fungerar"
     invitation_html: |
       <h2>Hur du skriver en bra inbjudan</h2>
-      <p>Den första frågan varje ny medlem får är 'vad är den här kategorin till för?'</p>
-       <p>Tänk på det enklaste sättet du kan beskriva kategorin: Vad vill du att ni ska
+      <p>Den första frågan varje ny medlem får är 'vad är den här gruppen till för?'</p>
+       <p>Tänk på det enklaste sättet du kan beskriva gruppen: Vad vill du att ni ska
       åstadkomma tillsammans? Vilka typer av beslut kommer ni att fatta? Vem kommer att delta?</p>
-      <p>Det kan vara en bra idé att prata med din kategori innan du bjuder in dem att gå med i Loomio.</p>
+      <p>Det kan vara en bra idé att prata med din grupp innan du bjuder in dem att gå med i Loomio.</p>
       <p>Folk vill gärna veta varför de har blivit inbjudna, vad som förväntas av dem,
       samt varför det ska vara värt tiden att lära sig använda ett nytt verktyg.</p>
     join_the_community: "Gå med i communityn"
-    join_the_community_description_html: "Alla är välkomna i Loomio Community, där vi pratar om hur vi får ut mesta möjliga av verktyget samt även förslag till hur vi kan det ännu bättre.<br /><br /><a href='https://www.loomio.org/groups/3'>Klicka här för att gå till Loomio Community kategorin</a>."
+    join_the_community_description_html: "Alla är välkomna i Loomio Community, där vi pratar om hur vi får ut mesta möjliga av verktyget samt även förslag till hur vi kan det ännu bättre.<br /><br /><a href='https://www.loomio.org/groups/3'>Klicka här för att gå till Loomio Community gruppen</a>."
     images_and_text_formatting: "Bild- och textformatering"
     images_and_text_formatting_html: |
       <p>Loomio använder ‘Markdown’ för bild- och textformatering.
@@ -427,25 +427,25 @@ sv:
       för mer information om hur du använder Markdown.</p>
     keep_up_to_date: "Håll informationen uppdaterad"
     keep_up_to_date_html: |
-      <p>Klickar du på din kategoris namn högst upp på skärmen kommer du till din Group Page,
-      där du kan se en lista över kategorins alla diskussioner och beslut. Om du är med i mer än
-      en kategori, kan du se alla aktiviteter i alla dina kategorier samtidigt på startsidan.</p>
-      <p>Du kommer även att få ett email när viktiga saker händer i din kategori.
+      <p>Klickar du på din grupps namn högst upp på skärmen kommer du till din Group Page,
+      där du kan se en lista över gruppens alla diskussioner och beslut. Om du är med i mer än
+      en grupp, kan du se alla aktiviteter i alla dina grupper samtidigt på startsidan.</p>
+      <p>Du kommer även att få ett email när viktiga saker händer i din grupp.
       Du kan ändra dina emailinställningar <a href="%{link}"">här</a>.</p>
     make_a_decision: "Fatta ett beslut"
-    make_a_decision_description: "När kategorin är redo att fatta beslut, kan vem som helst göra ett förslag. Ange tydligt vad som bör göras och även en kort bakgrund så att alla förstår precis vad det innebär att hålla med eller att inte hålla med."
-    prompt_people_details: "Om du vill få uppmärksamheten från en person i din kategori, skriv '@' följt av deras namn. De kommer då att få ett email som informerar dem att du har nämnt dem i en kommentar."
+    make_a_decision_description: "När gruppen är redo att fatta beslut, kan vem som helst göra ett förslag. Ange tydligt vad som bör göras och även en kort bakgrund så att alla förstår precis vad det innebär att hålla med eller att inte hålla med."
+    prompt_people_details: "Om du vill få uppmärksamheten från en person i din grupp, skriv '@' följt av deras namn. De kommer då att få ett email som informerar dem att du har nämnt dem i en kommentar."
     prompt_people_html: "Uppmärksamma en person med <span class='blue'>@mentions</span>"
     positions_agree_description: "<span>Håller med</span> innebär att du gillar förslaget."
-    positions_abstain_description: "<span>Avstår</span> innebär att du är osäker, eller kan tänka dig att låta kategorin fatta beslutet utan dig."
-    positions_disagree_description: "<span>Håller inte med</span> innebär att du tror att det kan finnas ett bättre alternativ, men att du kan tänka dig att foga dig i kategorins beslut."
+    positions_abstain_description: "<span>Avstår</span> innebär att du är osäker, eller kan tänka dig att låta gruppen fatta beslutet utan dig."
+    positions_disagree_description: "<span>Håller inte med</span> innebär att du tror att det kan finnas ett bättre alternativ, men att du kan tänka dig att foga dig i gruppens beslut."
     positions_block_description: "<span>Blockerar</span> innebär att du har allvarliga invändningar och att du skulle bli mycket missnöjd om detta förslag gick igenom."
     start_discussion: "Starta en engagerande diskussion"
-    start_discussion_html: "<p>När du startar en ny diskussion, se till att titeln förmedlar ämnet kortfattat .\nAnvänd Context Panel för att ge all bakgrundsinformation som är nödvändig \nför att kategorin ska få en produktiv och givande diskussion.</p>\n<p>Under diskussionens gång kan Context Panel uppdateras närhelst ny information\ntillkommer. Förutom att klargöra ämnet, kan\
-      \ du använda detta utrymme till att\ndela resurser, summera diskussionens utveckling, eller beskriva de beslutssätt\ndin kategori använder.</p>\n"
+    start_discussion_html: "<p>När du startar en ny diskussion, se till att titeln förmedlar ämnet kortfattat .\nAnvänd Context Panel för att ge all bakgrundsinformation som är nödvändig \nför att gruppen ska få en produktiv och givande diskussion.</p>\n<p>Under diskussionens gång kan Context Panel uppdateras närhelst ny information\ntillkommer. Förutom att klargöra ämnet, kan\
+      \ du använda detta utrymme till att\ndela resurser, summera diskussionens utveckling, eller beskriva de beslutssätt\ndin grupp använder.</p>\n"
     start_proposal: "Hur du skriver ett tydligt förslag"
-    start_proposal_html: "<p>Om titeln är tydlig och kortfattad kommer deltagarna direkt att förstå \nvad det är ni ska bli överens eller inte överens om. </p>\n<p>Det gör inget att ett förslag inte skulle komma direkt till en tydlig överenskommelse.\nOm kategorin inte gillar det första förslaget, kan vem som helst komma med ett nytt förslag för att\nta med uppkomna invändningar\
-      \ och föra processen framåt. </p>\n<p>Genom denna dynamiska process kan kategorins kollektiva intelligens generera bättre idéer\nän någon skulle kunnat ha gjort på egen hand.</p>\n<p>Tidsfristen för ett förslag kan utökas när som helst, om det ser ut som beslutet skulle behöva mer tid.\nAlla kommer att få ett email 24 timmar innan ett förslag stängs.</p>\n"
+    start_proposal_html: "<p>Om titeln är tydlig och kortfattad kommer deltagarna direkt att förstå \nvad det är ni ska bli överens eller inte överens om. </p>\n<p>Det gör inget att ett förslag inte skulle komma direkt till en tydlig överenskommelse.\nOm gruppen inte gillar det första förslaget, kan vem som helst komma med ett nytt förslag för att\nta med uppkomna invändningar\
+      \ och föra processen framåt. </p>\n<p>Genom denna dynamiska process kan gruppens kollektiva intelligens generera bättre idéer\nän någon skulle kunnat ha gjort på egen hand.</p>\n<p>Tidsfristen för ett förslag kan utökas när som helst, om det ser ut som beslutet skulle behöva mer tid.\nAlla kommer att få ett email 24 timmar innan ett förslag stängs.</p>\n"
     video_id: "52025402"
     video_tutorial: "Videotutorial"
     video_tutorial_description: "Se videon för en snabb demonstration av hur Loomio fungerar."
@@ -457,12 +457,12 @@ sv:
     vote: 'Du kan ändra din ståndpunkt när som helst'
   pricing_page:
     intro: |
-      kategorier som har finansiering betalar en abonnemangskostnad för att använda verktyget.
-      kategorier som har få medel att betala för sig använder en Betala-vad-du-kan-modell: dvs att deras medlemmar uppmanas att lämna ett frivilligt bidrag. Ditt bidrag innebär att vi kan hålla Loomio oberoende, fri från reklam, samt att den drivs av och för våra medlemmar.
+      Grupper som har finansiering betalar en abonnemangskostnad för att använda verktyget.
+      Grupper som har få medel att betala för sig använder en Betala-vad-du-kan-modell: dvs att deras medlemmar uppmanas att lämna ett frivilligt bidrag. Ditt bidrag innebär att vi kan hålla Loomio oberoende, fri från reklam, samt att den drivs av och för våra medlemmar.
     organisations: Organisationer
     organisations_examples: t ex företag, myndigheter, och ideella organisationer
-    informal_groups: Informella kategorier
-    informal_groups_desc: Medlemmarna i din kategori kommer att få en begäran att ge ett bidrag efter förmåga
+    informal_groups: Informella grupper
+    informal_groups_desc: Medlemmarna i din grupp kommer att få en begäran att ge ett bidrag efter förmåga
     informal_groups_examples: t ex familjer, samhällsrörelser, sammanslutningar
   contribution:
     any_amount: eller ett engångsbidrag om
@@ -476,7 +476,7 @@ sv:
       Loomio är ett socialt kooperativ som arbetar för att göra det enkelt för alla att delta i beslut som påverkar dem.
       Pengar borde inte få vara ett hinder för att kunna fatta beslut tillsammans. Loomio finansieras genom bidrag från våra användare, samt abonnemang som betalas av etablerade organisationer som använder verktyget.
 
-      Ditt bidrag gör att vi kan hålla Loomio oberoende, fri från reklam, samt fritt tillgängligt för kategorier som gör bra saker för samhället.
+      Ditt bidrag gör att vi kan hålla Loomio oberoende, fri från reklam, samt fritt tillgängligt för grupper som gör bra saker för samhället.
 
       Tack för att du gör detta möjligt!
     thank_you_title: Tack för att du bidrar till Loomio!
@@ -487,13 +487,13 @@ sv:
 
       Alla är välkomna att gå med i Loomios Community, där vi pratar om hur man får ut mesta möjliga av verktyget, samt hur det kan göra ännu bättre.
 
-      <a href='https://www.loomio.org/groups/3'> Ta mig till kategorin Loomio Community &raquo;</a>
+      <a href='https://www.loomio.org/groups/3'> Ta mig till gruppen Loomio Community &raquo;</a>
 
     making_a_donation: Gör en donation
     making_a_donation_description: |
       Loomio är ett socialt kooperativ som arbetar för att göra det enkelt för alla att delta i beslut som påverkar dem.
 
-      Ditt bidrag gör det möjligt för oss att hålla Loomio oberoende, fri från reklam, samt fritt tillgängligt för kategorier som vill göra bra saker för samhället.
+      Ditt bidrag gör det möjligt för oss att hålla Loomio oberoende, fri från reklam, samt fritt tillgängligt för grupper som vill göra bra saker för samhället.
 
       Tack för att du gör detta möjligt!
   resend_confirmation: "Sänd konfirmationsinstruktionerna en gång till"
@@ -536,20 +536,20 @@ sv:
     no_invitations_left_get_more: "Emaila contact@loomio.org och vi ska se vad vi kan göra för att hjälpa dig"
     invitation_not_found: 'Kunde inte hitta någon inbjudan med denna token. Be om en ny inbjudan från avsändaren.'
     invitation_cancelled: 'Denna inbjudan har blivit cancellerad. Ta kontakt med avsändaren av inbjudan om du tror att det har blivit fel.'
-    invitation_already_used: 'Denna inbjudan har redan använts. Logga in för att fortsätta till din kategori.'
+    invitation_already_used: 'Denna inbjudan har redan använts. Logga in för att fortsätta till din grupp.'
     recipients: "Ange emailadresser, åtskilda av kommatecken:"
     invitees_placeholder: "Användarnamn <user1@example.com>, user2@example.com"
-    subject: "Gå med i vår nya Loomiokategori, %{group}"
-    invite_people: "Bjud in deltagare till din kategori"
+    subject: "Gå med i vår nya Loomiogrupp, %{group}"
+    invite_people: "Bjud in deltagare till din grupp"
     invite_to_discussion: "Bjud in deltagare till denna diskussion"
-    invite_to_discussion_info: "När du lägger till deltagare till denna diskussionen kommer de att få en inbjudan till din kategori. När de accepterar hänvisas de till denna diskussionen."
+    invite_to_discussion_info: "När du lägger till deltagare till denna diskussionen kommer de att få en inbjudan till din grupp. När de accepterar hänvisas de till denna diskussionen."
     select_members: "Lägg till medlemmar från %{group_name}"
     body_editable: |
       Hallå där, kom med och fatta beslut med oss! Vi använder ett beslutsstödsverktyg som heter Loomio.
     body_editable_discussion: |
       Hallå där, kom med i diskussionen!
     message_body: "Inbjudningsmeddelande"
-    invites_more_help2: "<p>Du kan bjuda in personer till din kategori när som helst.</p><p>Du kanske vill bjuda in alla medlemmar på en gång, eller börja med att bara bjuda in dem du arbetar närmast med.</p>"
+    invites_more_help2: "<p>Du kan bjuda in personer till din grupp när som helst.</p><p>Du kanske vill bjuda in alla medlemmar på en gång, eller börja med att bara bjuda in dem du arbetar närmast med.</p>"
     invitation_link: "Inbjudningslänk"
     discussion_link: "Delta i diskussionen:"
     link_help: "Klicka på denna länk för att gå med %{group} i Loomio:"
@@ -565,11 +565,11 @@ sv:
     no_match: 'Det fanns inga resultat som matchade din fråga'
   example_discussion:
     title: "Diskussionsexempel: Välkommen och en introduktion till Loomio"
-    description: "Välkommen till Loomio, ett nytt verktyg för att stötta kategorier att fatta beslut.\nGenom att engagera sig i ett ämne, diskutera olika perspektiv och information, samt att beakta eventuella invändningar som dyker upp, kan din kategori slå sina huvuden samman och hitta bästa vägen framåt. \nDu kan använda detta diskussionsexempel för att utforska verktygets olika funktioner.\n\
-      För att komma igång, tycker Loomios Hjälpbot att det vore en bra idé att din kategori tar en semester ihop. Cirkeldiagrammet till höger visar vad din kategori anser om förslaget. Du kan lämna din kommentar genom att klicka på en av beslutsknapparna nedan.\n"
+    description: "Välkommen till Loomio, ett nytt verktyg för att stötta grupper att fatta beslut.\nGenom att engagera sig i ett ämne, diskutera olika perspektiv och information, samt att beakta eventuella invändningar som dyker upp, kan din grupp slå sina huvuden samman och hitta bästa vägen framåt. \nDu kan använda detta diskussionsexempel för att utforska verktygets olika funktioner.\n\
+      För att komma igång, tycker Loomios Hjälpbot att det vore en bra idé att din grupp tar en semester ihop. Cirkeldiagrammet till höger visar vad din grupp anser om förslaget. Du kan lämna din kommentar genom att klicka på en av beslutsknapparna nedan.\n"
   example_motion:
     name: "Vi borde åka på semester till månen!"
-    description: "Loomios Hjälpbot tycker verkligen att din kategori borde åka till månen. Det sägs att rymdosten där är riktigt god. Men konsekvenserna för er klimatpåverkan är oroande. \nÄr detta en bra idé? Loomios Hjälpbot vill veta vad du tycker! \nOm du vet din ståndpunkt, klicka på någon av ikonerna nedan (hovra över beslutsknapparna för en beskrivning av vad var och en betyder).\
+    description: "Loomios Hjälpbot tycker verkligen att din grupp borde åka till månen. Det sägs att rymdosten där är riktigt god. Men konsekvenserna för er klimatpåverkan är oroande. \nÄr detta en bra idé? Loomios Hjälpbot vill veta vad du tycker! \nOm du vet din ståndpunkt, klicka på någon av ikonerna nedan (hovra över beslutsknapparna för en beskrivning av vad var och en betyder).\
       \ \nDu blir ombedd att göra ett kort uttalande om orsaken till ditt beslut. Detta gör det lätt att se en sammanfattning av vad alla tycker och varför. Du kan ångra dig eller ändra ditt beslut när som fram till att förslaget stängs.\n"
   contact_page:
     labels:
@@ -590,7 +590,7 @@ sv:
   discussion_form:
     new:
       header: "Starta en diskussion"
-      who: "Inom vilken kategori vill du starta denna diskussionen?"
+      who: "Inom vilken grupp vill du starta denna diskussionen?"
     edit:
       header: "Redigera diskussionen"
   motion_form:
@@ -610,12 +610,12 @@ sv:
   email_preferences_form:
     header: "Email preferenser"
     daily_activity_summary: "Sammanfattning av dagens aktiviteter"
-    daily_activity_subscription: "Skicka mig ett email med dagens aktiviteter som sammanfattar vad som hänt i mina kategorier"
+    daily_activity_subscription: "Skicka mig ett email med dagens aktiviteter som sammanfattar vad som hänt i mina grupper"
     global_notifications: "Globala notifieringar"
     proposal_closing_soon_subscription: "Påminn mig 24 timmar innan förslaget stänger"
     mentions_subscription: "Emaila mig när någon nämner mig i en kommentar"
-    group_activity_notifications: "Notifiering för kategorins aktiviteter "
-    group_activity_details: "För varje kategori, markera boxen om du vill få email för varje ny diskussion och beslut."
+    group_activity_notifications: "Notifiering för gruppens aktiviteter "
+    group_activity_details: "För varje grupp, markera boxen om du vill få email för varje ny diskussion och beslut."
     update_preferences: "Uppdatera intsällningar"
   new_user_form:
     create_an_account: "Skapa ett konto"
@@ -626,13 +626,13 @@ sv:
     use_avatar_kind: "Använd %{kind}"
     upload_new_image: "Ladda upp en ny bild"
   group_setup:
-    set_up_your_group: Starta din kategori
+    set_up_your_group: Starta din grupp
     desc_header: "Du är nästan klar!"
-    desc_html: "Som kategorins koordinator är du ansvarig för att administrera din Loomiokategori. När du har valt inställningar, kan du komma åt din nya kategori, starta diskussioner, samt skicka inbjudningar! <p>För att på enklast möjliga sätt beskriva din kategori, fråga dig själv: Vad vill ni uppnå tillsammans? Vilka typer av beslut kommer ni att fatta? Vem kommer att delta?"
-    submit: "Ta mig till min kategori!"
+    desc_html: "Som gruppens koordinator är du ansvarig för att administrera din Loomiogrupp. När du har valt inställningar, kan du komma åt din nya grupp, starta diskussioner, samt skicka inbjudningar! <p>För att på enklast möjliga sätt beskriva din grupp, fråga dig själv: Vad vill ni uppnå tillsammans? Vilka typer av beslut kommer ni att fatta? Vem kommer att delta?"
+    submit: "Ta mig till min grupp!"
     payment_model:
       header: Lommio är till för alla!
-      info: Vi har en betalningsmodell som passar alla kategorier, även de utan pengar :)
+      info: Vi har en betalningsmodell som passar alla grupper, även de utan pengar :)
       link: Läs mer
   simple_form:
     'yes': 'Ja'
@@ -650,28 +650,28 @@ sv:
         privacy_public_description: "Vem som helst kan se denna diskussionen"
         privacy_private_header: "Sluten"
         privacy_private_description: "Endast medlemmar i %{group} kan se denna diskussionen"
-        privacy_hidden_description: "Alla diskussioner i en dold kategori är slutna."
+        privacy_hidden_description: "Alla diskussioner i en dold grupp är slutna."
         of: "av"
-        of_no_group: "av denna kategorin"
+        of_no_group: "av denna gruppen"
       group:
-        name: "kategorinamn"
+        name: "Gruppnamn"
         description: "Beskrivning"
-        members_invitable_by: "Vem kan bjuda in personer till denna kategorin?"
+        members_invitable_by: "Vem kan bjuda in personer till denna gruppen?"
         members_invitable_by_coordinators: "Endast koordinatorer"
-        members_invitable_by_members: "Alla kategorimedlemmar"
+        members_invitable_by_members: "Alla gruppmedlemmar"
         privacy: Privat
         privacy_public_header: Öppen
-        privacy_public_description: Diskussionerna är öppna, så tillvida de inte görs slutna. Vem som helst kan hitta kategorin och be att få gå med.
+        privacy_public_description: Diskussionerna är öppna, så tillvida de inte görs slutna. Vem som helst kan hitta gruppen och be att få gå med.
         privacy_private_header: Mestadels slutet
-        privacy_private_description: Diskussionerna är slutna, om du inte explicit gör dem öppna. Vem som helst kan hitta kategorin och be att få gå med.
+        privacy_private_description: Diskussionerna är slutna, om du inte explicit gör dem öppna. Vem som helst kan hitta gruppen och be att få gå med.
         privacy_hidden_header: Dold (helt sluten)
-        privacy_hidden_description: Diskussioner är alltid slutna. Det är endast genom inbjudan som man kan hitta och gå med i kategorin.
-        privacy_parent_group_members_header: Synlig för huvudKategorins medlemmar
-        privacy_parent_group_members_description: Samma som sluten, bara kategorin och dess diskussioner kan ses av huvudKategorins medlemmar.
-        privacy_parent_group_members_description_short: Bara medlemmar och huvudKategorins medlemmar kan se denna kategori och dess diskussioner.
+        privacy_hidden_description: Diskussioner är alltid slutna. Det är endast genom inbjudan som man kan hitta och gå med i gruppen.
+        privacy_parent_group_members_header: Synlig för huvudgruppens medlemmar
+        privacy_parent_group_members_description: Samma som sluten, bara gruppen och dess diskussioner kan ses av huvudgruppens medlemmar.
+        privacy_parent_group_members_description_short: Bara medlemmar och huvudgruppens medlemmar kan se denna grupp och dess diskussioner.
         group_members_invitable_by: "Endast för koordinatorer"
         submit: Skicka
-        viewable_by_parent_members_header: Tillåt alla %{group} medlemmar att se denna underkategori och dess diskussioner
+        viewable_by_parent_members_header: Tillåt alla %{group} medlemmar att se denna undergrupp och dess diskussioner
       membership_request:
         introduction: "Presentera dig själv"
       motion:
@@ -687,8 +687,8 @@ sv:
       group_request:
         admin_name: "Vad heter du?"
         admin_email: "Vad har du för emailadress?"
-        name: "Vad heter din kategori?"
-        description: "Om du har möjlighet, berätta lite om din kategori för oss"
+        name: "Vad heter din grupp?"
+        description: "Om du har möjlighet, berätta lite om din grupp för oss"
     placeholders:
       discussion:
         title: "Titel"
@@ -699,13 +699,13 @@ sv:
         name: "Vad är dina förslag till handlingsplan?"
         description: "Ge tillräckligt med bakgrund så att alla förstår vad det innebär att instämma eller inte instämma."
       group:
-        name: "kategorinamn"
-        description: "kategoribeskrivning"
+        name: "Gruppnamn"
+        description: "Gruppbeskrivning"
       user:
         email: "Email"
         password: "Lösenord"
       group_request:
-        description: "Vi vill gärna höra mer om din kategori och varför ni vill använda Loomio."
+        description: "Vi vill gärna höra mer om din grupp och varför ni vill använda Loomio."
   helpers:
     submit:
       discussion:
@@ -725,55 +725,55 @@ sv:
     to_join_group:
       subject: "%{member} har bjudit in dig att gå med i  %{group_name} på Loomio"
     to_start_group:
-      subject: "Starta din nya Loomiokategori: %{group_name}"
+      subject: "Starta din nya Loomiogrupp: %{group_name}"
     user_added_to_a_group:
       subject: "%{who} har lagt till dig i %{which_group}"
-      content: "%{who} har lagt till dig i %{which_group} i Loomio. Klicka här för att gå till kategorin:"
+      content: "%{who} har lagt till dig i %{which_group} i Loomio. Klicka här för att gå till gruppen:"
     unsubscribe: "Avregistrera dig eller ändra dina emailinställningar:"
     unsubscribe_html: "<a href='%{link_path}'>%{link_text}</a> för att avregistrera eller ändra dina emailinställnignar."
     view_comment: "Klicka här för att se kommentaren på Loomio"
     view_discussion: "Klicka här för att se denna diskussionen"
-    view_group: "Klicka här för att se kategorin på Loomio"
+    view_group: "Klicka här för att se gruppen på Loomio"
     view_proposal: "Visa detta förslag på Loomio"
-    campaign_html: "Var det här beslutet viktigt för dig? Kan du <a href='%{link_path}'> tänka dig att bli en bidragsgivare till Loomio</a> och hjälpa oss att sprida Loomio till världen. Vi är en liten kategori som försöker göra stora saker och vi behöver ditt bidrag för att kunna fortsätta växa!"
+    campaign_html: "Var det här beslutet viktigt för dig? Kan du <a href='%{link_path}'> tänka dig att bli en bidragsgivare till Loomio</a> och hjälpa oss att sprida Loomio till världen. Vi är en liten grupp som försöker göra stora saker och vi behöver ditt bidrag för att kunna fortsätta växa!"
     create_discussion:
       intro: "%{who} startade en ny diskussion i %{which_group}:"
       subject: "Ny diskussion - %{which}"
     create_proposal:
-      intro: "Ett nytt förslag skapades i en Loomiokategori som du är med i."
+      intro: "Ett nytt förslag skapades i en Loomiogrupp som du är med i."
       closes_in: "Stänger om"
       subject: "Nytt förslag: %{which}"
     daily_activity:
       heading: "Dina aktiviter i Loomio"
-      intro: "Visar dig vad som har hänt i dina Loomiokategorier under de senaste 24 timmarna"
+      intro: "Visar dig vad som har hänt i dina Loomiogrupper under de senaste 24 timmarna"
       subject: "Loomio - Sammanställning för de senaste 24 timmarna"
     group_email:
       intro: "%{who} gjorde ett upprop till  %{group}:"
     group_membership_approved:
-      intro: "Din begäran att få tillgång till kategorin '%{group_name}' i Loomio har godkänts."
+      intro: "Din begäran att få tillgång till gruppen '%{group_name}' i Loomio har godkänts."
       subject: "Medlemskap godkänt"
     invitation:
       hi: "Hej %{name},"
-      intro: "Klicka på länken nedan för att starta din kategori %{group_name}:"
+      intro: "Klicka på länken nedan för att starta din grupp %{group_name}:"
       closing_message: "Om du har någon fråga, eller om det är något vi kan göra för att hjälpa dig att komma igång, hör gärna av dig - enklast genom att svara på detta email."
       thanks: |
         Tack!
         Loomioteamet
     membership_request:
-      intro: "%{name} (%{email}) har begärt att få tillgång till en av dina Loomiokategorier."
+      intro: "%{name} (%{email}) har begärt att få tillgång till en av dina Loomiogrupper."
       subject: "%{who} har begärt att få gå med %{which_group}"
       view_group: "Du kan godkänna eller avslå begäran här"
     mentioned:
       intro: "Du nämndes i en diskussion med titeln:"
       said: "%{comment_author} sa:"
-      subject: "%{who} nämnde dig i %{which}Kategorin i Loomio"
+      subject: "%{who} nämnde dig i %{which}gruppen i Loomio"
     new_motion_created:
       context: "%{author} skapade ett förslag i %{group_full_name}:"
     proposal_closed:
       intro: 'Ditt förslag "%{proposal_name}" är stängt.'
       intro_html: 'Ditt förslag "%{proposal_name}" har stängts.'
-      specify_outcome_and_notify_group: "Skapa ett resultat och skicka det till din kategori!"
-      specify_outcome_and_notify_group_html: "Skapa ett resultat och skicka det till din kategori!"
+      specify_outcome_and_notify_group: "Skapa ett resultat och skicka det till din grupp!"
+      specify_outcome_and_notify_group_html: "Skapa ett resultat och skicka det till din grupp!"
       subject: "Förslaget stängt - %{which}"
     proposal_outcome:
       subject: "Resultat av förslaget"
@@ -814,9 +814,9 @@ sv:
   enable: "Tillåt"
   participation: "Deltagande"
   disable: "Inaktivera"
-  group: "kategori"
-  groups: "kategorier"
-  group_admin: "kategorikoordinator"
+  group: "Grupp"
+  groups: "Grupper"
+  group_admin: "Gruppkoordinator"
   home: "Startsida"
   id: "id"
   like: "Gillar"
@@ -843,8 +843,8 @@ sv:
   send_invite: "Skicka inbjudan"
   send_email: "Skicka email"
   show_more: "Visa mer"
-  start_a_group: "Starta en kategori"
-  start_group: "Starta en kategori!"
+  start_a_group: "Starta en grupp"
+  start_group: "Starta en grupp!"
   starting: "Startar"
   subject: "Ämne"
   terms_of_service_html: "Genom att klicka på %{button_text}, godkänner du Loomios <a href='%{link_path}' target='_blank'>användarvillkor</a>"
