@@ -27,5 +27,7 @@ class PagesController < ApplicationController
   end
 
   def meta
+    render :meta, layout: "application"
+
   end
 end
