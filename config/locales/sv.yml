@@ -274,7 +274,7 @@ sv:
   update_group: "Uppdatera kategori"
   updating_group: "Uppdaterar kategori"
   start_a_discussion: "Starta en diskussion"
-  group_description: "kategoribeskrivning"
+  group_description: "Kategoribeskrivning"
   edit_group_description: "Redigera kategoridiskussionen"
   group_subscription: "kategoriabonnemang"
   group_request:
@@ -654,7 +654,7 @@ sv:
         of: "av"
         of_no_group: "av denna kategorin"
       group:
-        name: "kategorinamn"
+        name: "Kategorinamn"
         description: "Beskrivning"
         members_invitable_by: "Vem kan bjuda in personer till denna kategorin?"
         members_invitable_by_coordinators: "Endast koordinatorer"
@@ -814,8 +814,8 @@ sv:
   enable: "Tillåt"
   participation: "Deltagande"
   disable: "Inaktivera"
-  group: "kategori"
-  groups: "kategorier"
+  group: "Kategori"
+  groups: "Kategorier"
   group_admin: "kategorikoordinator"
   home: "Startsida"
   id: "id"
