@@ -177,7 +177,9 @@ ul, ol, li {
   height: 1px;
   background: #aaa;
 }
-
+.background-is{
+  shade: purple;
+}
 .field_with_errors { display: inline; }
 
 .inline-help { color: $error-color; }
