@@ -17,8 +17,8 @@ sv:
   date:
     formats:
       for_this_year: '%e %b'
-      for_another_year: '%y/%-m/%-d'
-      datepicker: "%Y-%m-%d"
+      for_another_year: '%d/%-m/%-y'
+      datepicker: "%d-%m-%Y"
   devise:
     invitations:
       send_instructions: 'En inbjudan har skickats till %{email}.'
