@@ -159,7 +159,7 @@ sv:
     terms: 'Villkor'
   inbox:
     dropdown-btn: 'Inbox'
-    empty: Du är fullt uppdaterad! Det finns inga olästa nya kommentarer.
+    empty: 'Du är fullt uppdaterad! Det finns inga olästa nya kommentarer.'
   notifications:
     header: "Notifieringar"
     new_discussion: "har startat en ny diskussion"
@@ -193,8 +193,8 @@ sv:
   sign_in: "Logga in"
   honeypot_warning: "Kunde inte skapa ditt konto. Om du använder en radläsare, se till att det sista (dolda) fältet är ett blanktecken."
   tagline: "Skapa en värld där det är enkelt för vem som helst att delta i diskussioner som påverkar dem."
-  or_sign_in_html: "Om du redan har ett Loomiokonto, <a href='%{link}' class='%{link_class}'>logga in här</a>"
-  or_link_account_html: "Om du redan har ett Loomiokonto, <a href='%{link}'>länka det till</a>"
+  or_sign_in_html: "Om du redan har ett konto, <a href='%{link}' class='%{link_class}'>logga in här</a>"
+  or_link_account_html: "Om du redan har ett konto, <a href='%{link}'>länka det till</a>"
   click_to_dismiss: "Klicka här för att avvisa detta meddelande"
   generic_confirm: "Är du säker?"
   discussion_helper_text:
@@ -340,7 +340,7 @@ sv:
   confirm_close_proposal: "Är du säker på att du vill stänga detta förslag?"
   change_proposal_close_date: "Ändra slutdatum"
   change_proposal_close_date_header: "Ändra slutdatum för förslaget '%{which}'"
-  proposal: Förslag
+  proposal: 'Förslag'
   proposal_close_date_error: "Ge ett framtida slutdatum"
   proposal_closing_when: "Stänger om %{when}"
   proposal_closed_when: "Stängde för %{when}"
@@ -498,26 +498,27 @@ sv:
       Tack för att du gör detta möjligt!
   resend_confirmation: "Sänd konfirmationsinstruktionerna en gång till"
   new_password: "Nytt lösenord"
-  confirm_new_password: "Konfirmera det nya lösenordet"
+  confirm_new_password: "Bekräfta det nya lösenordet"
   change_your_password: "Ändra ditt lösenord"
   change_my_password: "Ändra mitt lösenord"
   send_password_reset: "Skicka mig instruktioner för att återställa lösenordet"
   blank_details: "(lämna blankt om du inte vill ändra på det)"
-  password_confirmation: "konfirmera lösenordet"
+  password_confirmation: "Bekräfta lösenordet"
   current_password: "Nuvarande lösenord"
   password_details: "(vi behöver ditt nuvarande lösenord för att konfirmera dina ändringar)"
-  confirm_password: "Konfirmera lösenord"
+  confirm_password: "Bekräfta lösenord"
   cancel_my_account: "Avsluta mitt konto"
   remember_me: "Kom ihåg mig"
   signing_in: "Loggar in"
   or: "eller"
   forgot_your_password: "Har du glömt ditt lösenord?"
   dont_have_an_account: "Har du inte något konto?"
+  create_one_now: "Skapa ett nu"
   link_it_up_instead: "Länka det istället till"
   sign_up_via: "Skriv in dig via"
   or_fill_in_this_form: "eller fyll i detta formulär"
   already_have_account: "Har du redan ett Loomiokonto?"
-  confirm_your_details: "Konfirmera dina uppgifter"
+  confirm_your_details: "Bekräfta dina uppgifter"
   link_up_your_account: "Länka ditt konto till"
   log_in_to_your_loomio_account: "Logga in på ditt Loomiokonto och länka det till %{provider_name}."
   now_that_your_logged_in: "Nu när du har logga in med %{provider_name}, konfirmera dina uppgifter för att skapa ett Loomiokonto."
@@ -619,6 +620,8 @@ sv:
     update_preferences: "Uppdatera intsällningar"
   new_user_form:
     create_an_account: "Skapa ett konto"
+  create_an_account: "Skapa ett konto"
+  create_account_btn: "Skapa konto"
   profile_form:
     view: "Visa min profil"
     profile: "Ändra profilen"

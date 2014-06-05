@@ -52,6 +52,8 @@ class Groups::MembershipRequestsController < BaseController
                             params: permitted_params.membership_request,
                             requestor: current_user,
                             group: @group)
+    @membership_request.approve!
+
   end
 
   def load_group
