@@ -18,7 +18,9 @@ class Groups::MembershipRequestsController < BaseController
 
     if @membership_request.persisted?
       flash[:success] = t(:'success.membership_requested', which_group: @group.full_name)
-      redirect_to after_request_membership_path
+      ManageMembershipRequests.approve!(@membership_request, approved_by: @group.contact_person)
+      redirect_to @group
+
     else
       if @membership_request.errors[:requestor].any?
         flash[:warning] = @membership_request.errors[:requestor].first
@@ -52,8 +54,6 @@ class Groups::MembershipRequestsController < BaseController
                             params: permitted_params.membership_request,
                             requestor: current_user,
                             group: @group)
-    @membership_request.approve!
-
   end
 
   def load_group
