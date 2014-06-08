@@ -69,7 +69,8 @@ class Discussion < ActiveRecord::Base
   end
 
   def archive!
-    self.update_attribute(:archived_at, DateTime.now)
+    self.update_attribute(:archived_at, DateTime.now) and
+    Group.decrement_counter(:discussions_count, group_id) 
   end
 
   def is_archived?

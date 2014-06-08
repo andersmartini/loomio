@@ -32,6 +32,38 @@ describe Group do
     end
   end
 
+  context "children counting" do
+
+    describe "#discussions_count" do
+      before do
+        @group = create(:group)
+        @user = create(:user)
+      end
+
+      it "returns a count of discussions" do
+        expect { 
+          @group.discussions.create(attributes_for(:discussion).merge({ author: @user }))
+        }.to change { @group.reload.discussions_count }.by(1)
+      end
+
+      it "updates correctly after archiving a discussion" do
+        @group.discussions.create(attributes_for(:discussion).merge({ author: @user }))
+        @group.reload.discussions_count.should == 1
+        expect {
+          @group.discussions.first.archive!
+        }.to change { @group.reload.discussions_count }.by(-1)
+      end
+
+      it "updates correctly after deleting a discussion" do
+        @group.discussions.create(attributes_for(:discussion).merge({ author: @user }))
+        @group.reload.discussions_count.should == 1
+        expect {
+          @group.discussions.first.destroy
+        }.to change { @group.reload.discussions_count }.by(-1)
+      end
+    end
+  end
+
   describe "#voting_motions" do
     it "returns motions that belong to the group and are open" do
       @group = motion.group
