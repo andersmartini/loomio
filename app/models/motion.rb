@@ -37,6 +37,8 @@ class Motion < ActiveRecord::Base
   after_initialize :set_default_close_at_date_and_time
   before_validation :set_closing_at
   after_create :fire_new_motion_event
+  after_create :increment_group_counter
+  after_destroy :decrement_group_counter
 
   attr_accessor :create_discussion
 
@@ -261,4 +263,13 @@ class Motion < ActiveRecord::Base
     def fire_new_motion_event
       Events::NewMotion.publish!(self)
     end
+
+    def increment_group_counter
+      Group.increment_counter :motions_count, group.id
+    end
+
+    def decrement_group_counter
+      Group.decrement_counter :motions_count, group.id
+    end
+
 end
