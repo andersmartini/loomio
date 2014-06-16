@@ -9,7 +9,7 @@ class Groups::MembershipRequestsController < BaseController
     @membership_request = MembershipRequest.new
     @membership_request.group = @group
     @membership_request.requestor = current_user
-    store_referer_location
+    redirect_to 
   end
 
   def create
