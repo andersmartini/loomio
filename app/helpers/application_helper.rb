@@ -143,6 +143,7 @@ module ApplicationHelper
     "islogo.png"
   end
 
+
   def navbar_contribute
     ENV["NAVBAR_CONTRIBUTE"] or "show"
   end

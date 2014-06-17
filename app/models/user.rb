@@ -15,9 +15,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :recoverable, :registerable, :rememberable, :trackable, :omniauthable
   attr_accessor :honeypot
 
-  validates :name, :presence => true
-  validates :email, :presence => true, uniqueness: true, email: true
-  validates_inclusion_of :uses_markdown, :in => [true,false]
+  validates :name, presence: true
+  validates :email, presence: true, uniqueness: true, email: true
+  validates_inclusion_of :uses_markdown, in: [true,false]
 
   has_attached_file :uploaded_avatar,
     styles: {
@@ -33,7 +33,7 @@ class User < ActiveRecord::Base
 
   validates_inclusion_of :avatar_kind, in: AVATAR_KINDS
 
-  validates_uniqueness_of :username, :allow_nil => true, :allow_blank => true
+  validates_uniqueness_of :username, allow_nil: true, allow_blank: true
 
   include Gravtastic
   gravtastic  :rating => 'pg',
@@ -41,7 +41,7 @@ class User < ActiveRecord::Base
 
 
   has_many :admin_memberships,
-           :conditions => { admin: true },
+           :conditions => 'memberships.admin = TRUE AND memberships.is_suspended = FALSE',
            :class_name => 'Membership',
            :dependent => :destroy
 
@@ -51,6 +51,7 @@ class User < ActiveRecord::Base
            :source => :group
 
   has_many :memberships,
+           conditions: {is_suspended: false},
            :dependent => :destroy
 
   has_many :membership_requests,
@@ -59,11 +60,6 @@ class User < ActiveRecord::Base
   has_many :groups,
            :through => :memberships,
            conditions: { archived_at: nil }
-
-  has_many :public_groups,
-           :through => :memberships,
-           :source => :group,
-           :conditions => { :privacy => 'public' }
 
   has_many :discussions,
            :through => :groups
@@ -88,7 +84,8 @@ class User < ActiveRecord::Base
            :source => :announcement
 
   has_many :discussion_readers, dependent: :destroy
-  has_many :motion_read_logs, dependent: :destroy
+  has_many :motion_readers, dependent: :destroy
+  has_many :omniauth_identities, dependent: :destroy
 
 
   has_many :notifications
@@ -109,6 +106,10 @@ class User < ActiveRecord::Base
 
   def self.email_taken?(email)
     User.find_by_email(email).present?
+  end
+
+  def user_id
+    id
   end
 
   def is_logged_in?
@@ -160,12 +161,15 @@ class User < ActiveRecord::Base
     memberships.where(:group_id => group.id, :subscribed_to_notification_emails => true).present?
   end
 
-
-  def is_group_admin?(group)
-    admin_memberships.where(group_id: group.id).any?
+  def is_group_admin?(group=nil)
+    if group.present?
+      admin_memberships.where(group_id: group.id).any?
+    else
+      admin_memberships.any?
+    end
   end
 
-  def is_group_member?(group)
+  def is_member_of?(group)
     memberships.where(group_id: group.id).any?
   end
 
@@ -176,7 +180,6 @@ class User < ActiveRecord::Base
   def time_zone
     self[:time_zone] || 'UTC'
   end
-
 
   def is_parent_group_member?(group)
     memberships.for_group(group.parent).exists? if group.parent

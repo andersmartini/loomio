@@ -6,9 +6,9 @@
     %title= title
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
     = stylesheet_link_tag "application"
+    = theme_stylesheet_link_tag
     = csrf_meta_tags
     = render 'social_metadata', description: @meta_description, title: @meta_title
-
 
   %body{class: "pages #{controller_name} #{action_name}"}
     - analytics_scope do
@@ -18,7 +18,6 @@
       .navbar-inner
         .navbar-container
           = render "header"
-
     .container.home-flash
       = render 'flash_messages', :flash => flash
 
@@ -28,4 +27,6 @@
           = yield
 
     = render 'footer_logged_out'
+
   = javascript_include_tag "application"
+  = theme_javascript_include_tag
