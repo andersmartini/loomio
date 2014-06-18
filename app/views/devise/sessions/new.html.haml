@@ -16,10 +16,10 @@
               - else
                 = t :sign_in
           .signin_container
-            = render 'devise/shared/omniauth_buttons'
-            .separator-container
-              .separator
-                = t :or
+            -#= render 'devise/shared/omniauth_buttons'
+            -#.separator-container
+            -#  .separator
+            -#    = t :or
             = render "form"
   .terms
     =t(:terms_of_service_html, button_text: t(:'devise.sessions.sign_in'), link_path: terms_of_service_path)

@@ -3,7 +3,7 @@
     %h1 Inbox
   .span8#inbox-description
     %i.fa.fa-star
-    = "Here is the activity you haven't read yet."
+    = t(:"inbox.unread_info")
   .span2.inbox-preferences
 
     =link_to inbox_preferences_path, class: 'preferences-link' do
