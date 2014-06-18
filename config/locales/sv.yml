@@ -859,3 +859,15 @@ sv:
   persona: "Persona"
   common:
     email: "Email"
+
+#
+# GROUP PAGE
+#
+
+  group_form:
+    name: "Kategorinamn"
+    description: "Beskrivning"
+    category: "Placering"
+
+  #  confirm_all_discussions_will_be_made_private_message: "If you proceed, any public discussions will be made private."
+  #  confirm_all_discussions_will_be_made_public_message: "Are you sure? If you proceed, any private discussions will be made public."
