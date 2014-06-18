@@ -95,6 +95,11 @@ all_discussions_will_be_made_private = ->
 editing_group = ->
   $('.group-settings').data().isEditing
 
+set_public_defaults = ->
+  $("#group_visible_to_public").prop("checked", true)
+  $("#group_membership_granted_upon_request").prop("checked", true)
+  $("#group_discussions_privacy_options_public_only").prop("checked", true)
+
 $ ->
   $('form.group-settings').on 'submit', ->
     if editing_group()
@@ -104,9 +109,11 @@ $ ->
         confirm $('form.group-settings').data().confirmAllDiscussionsWillBeMadePublicMessage
 
   $('form.group-settings').on 'change', ->
+    set_public_defaults()
     update_group_form_state()
 
   # and when the dom loads
+  set_public_defaults()
   update_group_form_state()
 
 show_cover_photo_upload = ->
