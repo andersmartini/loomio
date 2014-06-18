@@ -5,14 +5,11 @@ $text-on-bg: $mid-grey;
   display: block;
   width: 136px;
   height: 36px;
-  background: image-url("logo-orange.png") 0 0 no-repeat;
+  background: image-url("islogo.png") 0 0 no-repeat;
 }
-.app-logo{
+.app-logo, .app-logo.beta{
   width: 93px;
   margin: 9px 0 0 10px;
-  height: 28px;
-  background: image-url("navbar-logo.png") 0 0 no-repeat;
-}
-.app-logo.beta{
-  background: image-url("navbar-logo-beta.jpg") 0 0 no-repeat;
+  height: 40px;
+  background: image-url("islogo.png") 0 0 no-repeat;
 }
