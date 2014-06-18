@@ -23,9 +23,9 @@
                 = t :"new_user_form.create_an_account"
             %p= t :or_sign_in_html, link: user_session_path, link_class: 'existing-user'
             .signin_container
-              %h3= t :sign_up_via
-              = render 'devise/shared/omniauth_buttons'
-              %h3= t :or_fill_in_this_form
+              -# %h3= t :sign_up_via
+              -# = render 'devise/shared/omniauth_buttons'
+              -# %h3= t :or_fill_in_this_form
               = render "form"
   .terms
     =t(:terms_of_service_html, button_text: t(:'devise.registrations.sign_up'), link_path: terms_of_service_path)
