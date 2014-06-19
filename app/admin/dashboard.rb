@@ -36,16 +36,20 @@ def print_active_users()
         M.action_year DESC,
         M.action_month DESC
     })
-  current_month_active = counts[0]['active_users']
-  month_totals = []
-  month_totals << "<h1> #{current_month_active} </h1><table>"
-  counts.each do |m|
-    month = Date.new(m['action_year'].to_i, m['action_month'].to_i, 1).strftime('%Y - %b')
-    active_users = m['active_users']
-    month_totals << "<tr><td> #{month} </td><td> #{active_users} </td><td>"
+  if counts.include?(0)
+    current_month_active = counts[0]['active_users']
+    month_totals = []
+    month_totals << "<h1> #{current_month_active} </h1><table>"
+    counts.each do |m|
+      month = Date.new(m['action_year'].to_i, m['action_month'].to_i, 1).strftime('%Y - %b')
+      active_users = m['active_users']
+      month_totals << "<tr><td> #{month} </td><td> #{active_users} </td><td>"
+    end
+    month_totals << "</table>"
+    month_totals.join('')
+  else
+    dummy = "<div></div>"
   end
-  month_totals << "</table>"
-  month_totals.join('')
 end
 
 ActiveAdmin.register_page "Dashboard" do

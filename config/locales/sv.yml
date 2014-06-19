@@ -859,6 +859,7 @@ sv:
   persona: "Persona"
   common:
     email: "Email"
+    start_group: "Skapa kategori!"
 
 #
 # GROUP PAGE
