@@ -201,7 +201,7 @@ Loomio::Application.routes.draw do
 
   get '/wall', to: 'wall#show', as: 'wall'
   get '/dashboard', to: 'dashboard#show', as: 'dashboard'
-  root :to => 'marketing#index'
+  root :to => 'almedalen#index'
 
   constraints(MainDomainConstraint) do
     scope controller: 'pages' do
