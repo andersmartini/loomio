@@ -499,15 +499,15 @@ sv:
       Tack för att du gör detta möjligt!
   resend_confirmation: "Sänd konfirmationsinstruktionerna en gång till"
   new_password: "Nytt lösenord"
-  confirm_new_password: "Konfirmera det nya lösenordet"
+  confirm_new_password: "Bekräfta det nya lösenordet"
   change_your_password: "Ändra ditt lösenord"
   change_my_password: "Ändra mitt lösenord"
   send_password_reset: "Skicka mig instruktioner för att återställa lösenordet"
   blank_details: "(lämna blankt om du inte vill ändra på det)"
-  password_confirmation: "konfirmera lösenordet"
+  password_confirmation: "bekräfta lösenordet"
   current_password: "Nuvarande lösenord"
-  password_details: "(vi behöver ditt nuvarande lösenord för att konfirmera dina ändringar)"
-  confirm_password: "Konfirmera lösenord"
+  password_details: "(vi behöver ditt nuvarande lösenord för att bekräfta dina ändringar)"
+  confirm_password: "Bekräfta lösenord"
   cancel_my_account: "Avsluta mitt konto"
   remember_me: "Kom ihåg mig"
   signing_in: "Loggar in"
@@ -519,11 +519,11 @@ sv:
   sign_up_via: "Skriv in dig via"
   or_fill_in_this_form: "eller fyll i detta formulär"
   already_have_account: "Har du redan ett konto?"
-  confirm_your_details: "Konfirmera dina uppgifter"
+  confirm_your_details: "Bekräfta dina uppgifter"
   link_up_your_account: "Länka ditt konto till"
   log_in_to_your_loomio_account: "Logga in på ditt konto och länka det till %{provider_name}."
-  now_that_your_logged_in: "Nu när du har logga in med %{provider_name}, konfirmera dina uppgifter för att skapa ett konto."
-  confirmation_not_received: "Fick du inte instruktionerna för att kunna konfirmera?"
+  now_that_your_logged_in: "Nu när du har logga in med %{provider_name}, bekräfta dina uppgifter för att skapa ett konto."
+  confirmation_not_received: "Fick du inte instruktionerna för att kunna bekräfta?"
   unlock_not_received: "Fick du inte instruktionerna för att kunna låsa upp?"
   inactive_html: "Tyvärr, detta konto är inaktivt för närvarande. Om du har frågor <a href='%{path_to_contact}'>kontakta oss</a>."
   create_an_account_html: 'Skapa ett Loomio Betakonto'
@@ -684,7 +684,7 @@ sv:
         name: "Fullständigt namn"
         email: "Email"
         password: "Lösenord"
-        password_confirmation: "Konfirmera lösenordet"
+        password_confirmation: "Bekräfta lösenordet"
         language_preference: "Språk"
       group_request:
         admin_name: "Vad heter du?"
@@ -875,3 +875,8 @@ sv:
 
   #  confirm_all_discussions_will_be_made_private_message: "If you proceed, any public discussions will be made private."
   #  confirm_all_discussions_will_be_made_public_message: "Are you sure? If you proceed, any private discussions will be made public."
+
+  discussion_list:
+    empty:
+      no_discussions: "Det finns inte några samtal i dina kategorier."
+      no_discussions_in_group: "Denna kategori har inte några samtal ännu."
