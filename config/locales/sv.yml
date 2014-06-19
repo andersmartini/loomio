@@ -860,6 +860,9 @@ sv:
   common:
     email: "Email"
     start_group: "Skapa kategori!"
+    
+  group_categories:
+    blank: "Välj placering"
 
 #
 # GROUP PAGE
