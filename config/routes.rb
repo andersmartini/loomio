@@ -12,6 +12,7 @@ Loomio::Application.routes.draw do
     end
   end
 
+  root :to => 'almedalen#index'
   get "/explore", to: 'explore#index', as: :explore
   get "/explore/search", to: "explore#search", as: :search_explore
   get "/explore/category/:id", to: "explore#category", as: :category_explore
@@ -201,7 +202,6 @@ Loomio::Application.routes.draw do
 
   get '/wall', to: 'wall#show', as: 'wall'
   get '/dashboard', to: 'dashboard#show', as: 'dashboard'
-  root :to => 'almedalen#index'
 
   constraints(MainDomainConstraint) do
     scope controller: 'pages' do
