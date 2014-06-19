@@ -2,14 +2,17 @@ $pages-background: #F2F1ED;
 $app-background: #DBDBDB;
 $text-on-bg: $mid-grey;
 .pages-nav-logo{
+	margin-top: 1px;
   display: block;
-  width: 136px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   background: image-url("islogo.png") 0 0 no-repeat;
+  background-size: 100%
 }
 .app-logo, .app-logo.beta{
-  width: 93px;
-  margin: 9px 0 0 10px;
-  height: 40px;
+  width: 42px;
+  margin: 1px 0 0 10px;
+  height: 42px;
   background: image-url("islogo.png") 0 0 no-repeat;
+  background-size: 100%
 }
