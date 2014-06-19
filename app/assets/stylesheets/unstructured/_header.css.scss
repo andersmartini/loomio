@@ -78,6 +78,17 @@
     margin-top: 1px;
   }
 
+  li.nav-item#metap-container{
+    float: left;
+    position: relative;
+    display: inline;
+  }
+
+  li.nav-item#metap-container span {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+  }
+
   li.nav-item#help {
     float: right;
   }
