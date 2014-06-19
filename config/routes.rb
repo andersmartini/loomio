@@ -2,6 +2,8 @@ Loomio::Application.routes.draw do
 
   slug_regex = /[a-z0-9\-\_]*/i
   ActiveAdmin.routes(self)
+  
+  root :to => 'almedalen#index'
 
   namespace :admin do
     resource :email_groups, only: [:create, :new]
@@ -198,7 +200,6 @@ Loomio::Application.routes.draw do
   #   get :callback, on: :collection
   #   get :thanks, on: :collection
   # end
-  root :to => 'almedalen#index'
   get '/wall', to: 'wall#show', as: 'wall'
   get '/dashboard', to: 'dashboard#show', as: 'dashboard'
 
