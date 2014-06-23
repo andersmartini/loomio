@@ -8,6 +8,7 @@
       .activity-item-text-container
         .activity-item-comment-actor
           =link_to comment.user_name, user_path(comment.user), class: "user-name"
+          %i.fa.fa-smile-o
 
           .comment-actions
             - if can? :destroy, comment

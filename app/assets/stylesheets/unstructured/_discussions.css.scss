@@ -371,6 +371,21 @@ body.discussions.show {
       margin-top: -2px;
     }
 
+    .comment-emoticon{
+      margin-left: 4px;
+      font-size: 12px;
+      color: grey;
+      font-style: italic;
+    }
+
+    .comment-emoticon-dropdown{
+      padding: 2px;
+      font-size: 14px;
+      color: black;
+    }
+
+
+
     textarea #new-comment {
     }
     #new-comment {
