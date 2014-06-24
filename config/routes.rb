@@ -214,7 +214,7 @@ Loomio::Application.routes.draw do
       get :try_it
       get :wallets
       get :browser_not_supported
-      get :tipps_och_stod
+      get :tips_och_stod
     end
   end
 
@@ -227,6 +227,7 @@ Loomio::Application.routes.draw do
     match '/third_parties' => redirect('https://www.loomio.org/third_parties')
     match '/try_it' => redirect('https://www.loomio.org/try_it')
     match '/wallets' => redirect('https://www.loomio.org/wallets')
+    match '/tips_och_stod' => redirect('https://godasamtal.samutveckling.se/tips_och_stod')
   end
 
   scope controller: 'help' do
@@ -263,6 +264,7 @@ Loomio::Application.routes.draw do
     get 'get*involved' => redirect('/about')
     get 'privacy'      => redirect('/privacy_policy')
     get 'about'        => redirect('/about#about-us')
+    get 'tips_och_stod' => redirect('/tips_och_stod')
     match 'contact'    => 'contact_messages#new'
   end
 
