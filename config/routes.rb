@@ -264,7 +264,6 @@ Loomio::Application.routes.draw do
     get 'get*involved' => redirect('/about')
     get 'privacy'      => redirect('/privacy_policy')
     get 'about'        => redirect('/about#about-us')
-    get 'tips_och_stod' => redirect('/tips_och_stod')
     match 'contact'    => 'contact_messages#new'
   end
 
