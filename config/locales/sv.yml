@@ -35,8 +35,8 @@ sv:
     cant_state_position: "Förslaget är stängt."
     cant_view_member_profile: "Du kan inte se medlemmens profil för du är inte med i samma kategori."
     contribution: "Logga in och ge ett bidrag."
-    discussion_not_created: "Diskussionen kunde inte skapas."
-    discussion_not_moved: "Du har inte behörighet att flytta denna diskussion till %{destination_group.name}"
+    discussion_not_created: "Samtalet kunde inte skapas."
+    discussion_not_moved: "Du har inte behörighet att flytta detta samtal till %{destination_group.name}"
     group_not_archived: "Kategorin kunde inte sparas."
     invalid_close_date: "Ogiltigt slutdatum, kontrollera datumet."
     invalid_email: "Ange minst en giltig emailadress"
@@ -53,7 +53,7 @@ sv:
     group_request_invalid_token: "Tyvärr! Detta är ingen giltig token"
     group_private_or_not_found: "Kunde inte hitta kategorin. \n\nDenna kategori kan vara sluten. Om du fick detta av någon per länk, be dem att bjuda in dig till kategorin."
     group_already_setup: "Kategorin du försöker skapa finns redan."
-    proposal_already_exists: "Det finns redan ett öppet förslag för denna diskussionen."
+    proposal_already_exists: "Det finns redan ett öppet förslag för detta samtal."
     user_with_email_address_already_in_group: "En användare med den emailadressen finns redan i denna kategorin."
     you_have_already_requested_membership: "Du har redan begärt medlemskap i denna kategorin."
     you_are_already_a_member_of_this_group: "Du är redan medlem i denna kategori."
@@ -100,9 +100,9 @@ sv:
   success:
     added_to_group: "Du har lagts till i  %{which_group}."
     close_date_changed: "Slutdatum har ändrats."
-    discussion_created: "Diskussionen är skapad."
-    discussion_deleted: "Diskussionen är borttagen."
-    discussion_moved: "Diskussionen har flyttats till %{group_name}"
+    discussion_created: "Det goda samtalet är skapat."
+    discussion_deleted: "Samtalet är borttaget."
+    discussion_moved: "Samtalet har flyttats till %{group_name}"
     emails_sending: "Sänder email."
     group_archived: "Kategorin är sparad."
     group_created: "Kategorin är skapad."
@@ -163,14 +163,14 @@ sv:
     unread_info: Här visas aktiviteter du inte läst ännu.
   notifications:
     header: "Notifieringar"
-    new_discussion: "har startat en ny diskussion"
+    new_discussion: "har startat ett nytt samtal"
     new_motion: "har skapat ett nytt förslag"
     motion_closed:
       by_user: "har stängt förslaget"
       by_expiry: "Förslaget är stängt"
     new_vote: "%{position} på förslaget"
-    new_comment: "har kommenterat diskussionen"
-    comment_liked: "gillade din kommentar i diskussionen"
+    new_comment: "har deltagit i samtalet"
+    comment_liked: "gillade din kommentar i samtalet"
     user_mentioned: "har nämnt dig i en kommentar i"
     membership_requested: "har begärt medlemskap i"
     membership_request_approved: 'godkände din begäran att gå med'
@@ -179,7 +179,7 @@ sv:
     motion_blocked: "har blockerat förslaget"
     motion_outcome_created: "publicerade en ny status för förslaget"
     motion_outcome_updated: "uppdaterade en ny status för förslaget"
-  edit_discussion_context: "Redigera diskussionsinnehållet"
+  edit_discussion_context: "Redigera samtalsinnehållet"
   request_new_group: "Starta en kategori"
   start_new_group: "Starta en ny kategori"
   start_new_group_hint: "För att börja fatta beslut"
@@ -193,20 +193,20 @@ sv:
   sign_out: "Logga ut"
   sign_in: "Logga in"
   honeypot_warning: "Kunde inte skapa ditt konto. Om du använder en radläsare, se till att det sista (dolda) fältet är ett blanktecken."
-  tagline: "Skapa en värld där det är enkelt för vem som helst att delta i diskussioner som påverkar dem."
+  tagline: "Skapa en värld där det är enkelt för vem som helst att delta i goda samtal om det som påverkar dem."
   or_sign_in_html: "Om du redan har ett konto, <a href='%{link}' class='%{link_class}'>logga in här</a>"
   or_link_account_html: "Om du redan har ett konto, <a href='%{link}'>länka det till</a>"
   click_to_dismiss: "Klicka här för att avvisa detta meddelande"
   generic_confirm: "Är du säker?"
   discussion_helper_text:
-    header: "Välkommen till din första diskussion"
-    message: "<p>Ämnet syns högst upp på sidan, med innehållet under.</p><p>Diskussionen är till vänster och beslut kommer upp till höger. Om du tycker att kategorin är redo att fatta ett beslut kan du göra ett förslag för kategorin att beakta.</p>"
+    header: "Välkommen till ditt första samtal"
+    message: "<p>Ämnet syns högst upp på sidan, med innehållet under.</p><p>Samtalet är till vänster och beslut kommer upp till höger. Om du tycker att kategorin är redo att fatta ett beslut kan du göra ett förslag för kategorin att beakta.</p>"
   group_helper_text:
     header: "Välkommen till din nya kategori!"
-    message: "<p>Detta är <strong>kategorisidan</strong>. Till vänster finns en lista på kategorins alla diskussioner.</p><p>När du vill att kategorin ska diskutera ett annat ämne, starta en ny diskussion.</p>"
+    message: "<p>Detta är <strong>kategorisidan</strong>. Till vänster finns en lista på kategorins alla samtal.</p><p>När du vill att deltagarna i kategorin ska samtala om ett annat ämne, starta ett nytt gott samtal.</p>"
   dashboard_helper_text:
     header: "Välkommen till din startsida"
-    message: "<p>Startsidan visar alla pågående diskussioner i alla kategorier du är med i.</p><p>Du kan starta en diskussion om ett nytt ämne genom att klicka på knappen \"Starta en diskussion\"</p>"
+    message: "<p>Startsidan visar alla pågående samtal i alla kategorier du är med i.</p><p>Du kan starta ett gott samtal om ett nytt ämne genom att klicka på knappen \"Starta ett gott samtal\"</p>"
   prompt_visitor_to_authenticate:
     header: "Logga in eller gå med i kategorin för att delta"
     body: "Om du är medlem i denna kategorin, behöver du logga in för att delta."
@@ -215,7 +215,7 @@ sv:
     body: "För att lämna en kommentar eller rösta, behöver du vara medlem i denna kategorin."
   setup_steps_title: "Nästa steg:"
   setup_step_1: "Titta på diksussionsexemplet"
-  setup_step_2: "Starta din första diskussion"
+  setup_step_2: "Starta ditt första goda samtal"
   setup_step_3: "Bjud in deltagare till din kategori"
   invite_people: "Bjud in deltagare"
   no_invitations_button: "Inga inbjudningar kvar"
@@ -274,9 +274,9 @@ sv:
   edit_group: "Redigera kategori"
   update_group: "Uppdatera kategori"
   updating_group: "Uppdaterar kategori"
-  start_a_discussion: "Starta en diskussion"
+  start_a_discussion: "Starta ett gott samtal"
   group_description: "Kategoribeskrivning"
-  edit_group_description: "Redigera kategoridiskussionen"
+  edit_group_description: "Redigera kategoribeskrivningen"
   group_subscription: "kategoriabonnemang"
   group_request:
     neighbourhood_support_group: "t. ex. Stödkategori i Grannskapet"
@@ -289,7 +289,7 @@ sv:
 
 
   discussion_items:
-    new_discussion: "skapade diskussionen"
+    new_discussion: "skapade samtalet"
     new_motion: "skapade ett förslag"
     motion_closed:
       by_user: "stängde förslaget"
@@ -297,9 +297,9 @@ sv:
     motion_close_date_edited: "ändrade slutdatum för förslaget"
     motion_outcome_created: "publicerade en ny status för förslaget"
     motion_outcome_updated: "uppdaterade en ny status för förslaget"
-    discussion_title_edited: "ändrade diskussionstiteln"
-    discussion_description_edited: "ändrade diskussionsbeskrivningen"
-  discussion: "Diskussion"
+    discussion_title_edited: "ändrade samtalstiteln"
+    discussion_description_edited: "ändrade samtalsbeskrivningen"
+  discussion: "Samtal"
   current_decision: "Nuvarande beslut"
   previous_decisions: "Tidigare beslut"
   see_previous_decisions: "Se tidigare beslut"
@@ -307,9 +307,9 @@ sv:
   create_new_proposal: "Skapa nytt förslag"
   empty_decision_list_html: "Är ni redo att fatta beslut? <br> Vem som helst kan starta ett förslag."
   empty_decision_index: "Denna kategori har ännu inte fattat några beslut."
-  empty_discussion_list: "Det finns ännu inga aktiviteter i denna diskussionen."
-  empty_discussion_index: "Det finns inga diskussioner i någon av dina kategorier"
-  empty_discussion_index_group: "Denna kategorin har ännu inte några diskussioner."
+  empty_discussion_list: "Det finns ännu inga aktiviteter i detta samtal."
+  empty_discussion_index: "Det finns inga samtal i någon av dina kategorier"
+  empty_discussion_index_group: "Denna kategorin har ännu inte några goda samtal."
   private_group_discussion_display: "Denna kategori är sluten. Diskussionerna är endast synliga för dess medlemmar. Om du vill delta, kan du be att få gå med."
   discussion_context:
     started_html: "Startades %{when} av <a href='%{link}' class='%{link_class}'>%{who}</a>"
@@ -330,12 +330,12 @@ sv:
   delete_comment: "Ta bort kommentaren"
   confirm_delete_comment: "Är du säker på att du vill ta bort denna kommentaren?"
   markdown_settings_more_info: "Mer information..."
-  edit_discussion: "Redigera diskussionen"
-  move_discussion: "Flytta diskussionen"
-  move_discussion_to_hidden_group: "Denna diskussion är för närvarande öppen. Flyttas den till denna dolda kategori blir den sluten."
-  move_discussion_where: "Vart vill du flytta denna diskussionen?"
-  delete_discussion: "Ta bort diskussionen"
-  confirm_delete_discussion: "Är du säker på att du vill ta bort denna diskussionen permament?"
+  edit_discussion: "Redigera samtalet"
+  move_discussion: "Flytta samtalet"
+  move_discussion_to_hidden_group: "Detta samtal är för närvarande öppet. Flyttas den till denna dolda kategori blir den sluten."
+  move_discussion_where: "Vart vill du flytta detta samtal?"
+  delete_discussion: "Ta bort samtalet"
+  confirm_delete_discussion: "Är du säker på att du vill ta bort detta samtalet permament?"
   new_proposal: "Nytt förslag"
   close_proposal: "Stäng förslag"
   confirm_close_proposal: "Är du säker på att du vill stänga detta förslag?"
@@ -388,12 +388,12 @@ sv:
       @mention för att få med någon specifik person, vilket kommer att skicka ett email och informera dem om att
       de har blivit omnämnda i ett inlägg.</p>
     example1_html: |
-      <h3>Din kategori behöver diskutera ett ämne och utveckla ett förslag tillsammans</h3>
+      <h3>Ni vill samtala om ett ämne och utveckla ett förslag tillsammans</h3>
       <p>Strategi: Diskutera ämnet en stund innan ni arbetar fram ett förslag.</p>
-      <p>Diskussioner når ofta det bästa resultatet om ni bygger en gemensam förståelse
+      <p>Goda samtal når ofta det bästa resultatet om ni bygger en gemensam förståelse
       om problemet innan ni väljer en specifik lösning. När personer får möjlighet att
       delta i processen kommer de att vara mer benägna att sluta upp kring resultatet.</p>
-    example2_html: "<h3>Du har redan ett förslag i åtanke och vill få med dig kategorin att gå vidare.</h3>\n<p>Strategi: Starta en diskussion om ett särskilt beslut och lägg fram förslaget direkt.</p> \n<p>Om du har ett tydligt resultat i åtanke, men vill se till att det inte finns några kritiska invändningar,\nkan du använda förslaget för att få snabb återkoppling inför ett beslut.</p>\n\
+    example2_html: "<h3>Du har redan ett förslag i åtanke och vill få med dig deltagarna i kategorin att gå vidare.</h3>\n<p>Strategi: Starta ett gott samtal om ett särskilt ämne och lägg fram förslaget direkt.</p> \n<p>Om du har ett tydligt resultat i åtanke, men vill se till att det inte finns några kritiska invändningar,\nkan du använda förslaget för att få snabb återkoppling inför ett beslut.</p>\n\
       <p>Du kan använda detta för att slutföra ett dokument, godkänna en ansökan, eller få sign-off på ett arbete.</p>\n"
     get_in_touch: "Kontakta oss"
     get_in_touch_description_html: "Om du har någon fråga eller vill ge feedback, <a href='%{link}'>skriv till oss</a>."
@@ -543,17 +543,17 @@ sv:
     invitees_placeholder: "Användarnamn <user1@example.com>, user2@example.com"
     subject: "Gå med i vår nya Loomiokategori, %{group}"
     invite_people: "Bjud in deltagare till din kategori"
-    invite_to_discussion: "Bjud in deltagare till denna diskussion"
-    invite_to_discussion_info: "När du lägger till deltagare till denna diskussionen kommer de att få en inbjudan till din kategori. När de accepterar hänvisas de till denna diskussionen."
+    invite_to_discussion: "Bjud in deltagare till detta samtal"
+    invite_to_discussion_info: "När du lägger till deltagare till detta samtal kommer de att få en inbjudan till din kategori. När de accepterar hänvisas de till denna diskussionen."
     select_members: "Lägg till medlemmar från %{group_name}"
     body_editable: |
       Hallå där, kom med och fatta beslut med oss! Vi använder ett beslutsstödsverktyg som heter Loomio.
     body_editable_discussion: |
-      Hallå där, kom med i diskussionen!
+      Hallå där, kom med och samtala!
     message_body: "Inbjudningsmeddelande"
     invites_more_help2: "<p>Du kan bjuda in personer till din kategori när som helst.</p><p>Du kanske vill bjuda in alla medlemmar på en gång, eller börja med att bara bjuda in dem du arbetar närmast med.</p>"
     invitation_link: "Inbjudningslänk"
-    discussion_link: "Delta i diskussionen:"
+    discussion_link: "Delta i samtalet:"
     link_help: "Klicka på denna länk för att gå med %{group} i Loomio:"
     copy: "Om någon inte skulle ha fått sitt email med en inbjudan, kopiera då länken ovan och ge direkt till mottagaren."
     pending_invitations: 'Utestående inbjudningar'
@@ -566,8 +566,8 @@ sv:
     please_enter_a_search: 'Skriv in en fråga i sökfältet ovan'
     no_match: 'Det fanns inga resultat som matchade din fråga'
   example_discussion:
-    title: "Diskussionsexempel: Välkommen och en introduktion till Loomio"
-    description: "Välkommen till Loomio, ett nytt verktyg för att stötta kategorier att fatta beslut.\nGenom att engagera sig i ett ämne, diskutera olika perspektiv och information, samt att beakta eventuella invändningar som dyker upp, kan din kategori slå sina huvuden samman och hitta bästa vägen framåt. \nDu kan använda detta diskussionsexempel för att utforska verktygets olika funktioner.\n\
+    title: "Samtalsexempel: Välkommen och en introduktion till Loomio"
+    description: "Välkommen till Loomio, ett nytt verktyg för att stötta kategorier att fatta beslut.\nGenom att engagera sig i ett ämne, diskutera olika perspektiv och information, samt att beakta eventuella invändningar som dyker upp, kan din kategori slå sina huvuden samman och hitta bästa vägen framåt. \nDu kan använda detta samtalsexempel för att utforska verktygets olika funktioner.\n\
       För att komma igång, tycker Loomios Hjälpbot att det vore en bra idé att din kategori tar en semester ihop. Cirkeldiagrammet till höger visar vad din kategori anser om förslaget. Du kan lämna din kommentar genom att klicka på en av beslutsknapparna nedan.\n"
   example_motion:
     name: "Vi borde åka på semester till månen!"
@@ -591,10 +591,10 @@ sv:
       social_html: "Du kan också följa oss på <br/><a href='%{facebook}' target='_blank'>facebook</a>, <a href='%{google}' target='_blank'>google+</a>, and <a href='%{twitter}' target='_blank'>twitter</a>!"
   discussion_form:
     new:
-      header: "Starta en diskussion"
-      who: "Inom vilken kategori vill du starta denna diskussionen?"
+      header: "Starta ett gott samtal"
+      who: "Inom vilken kategori vill du starta detta samtal?"
     edit:
-      header: "Redigera diskussionen"
+      header: "Redigera samtalet"
   motion_form:
     header: "Nytt förslag"
     name_helper: "Skriv rubriken så kort och tydligt som möjligt."
@@ -617,7 +617,7 @@ sv:
     proposal_closing_soon_subscription: "Påminn mig 24 timmar innan förslaget stänger"
     mentions_subscription: "Emaila mig när någon nämner mig i en kommentar"
     group_activity_notifications: "Notifiering för kategorins aktiviteter "
-    group_activity_details: "För varje kategori, markera boxen om du vill få email för varje ny diskussion och beslut."
+    group_activity_details: "För varje kategori, markera boxen om du vill få email för varje nytt samtal och beslut."
     update_preferences: "Uppdatera intsällningar"
   new_user_form:
     create_an_account: "Skapa ett konto"
@@ -630,7 +630,7 @@ sv:
   group_setup:
     set_up_your_group: Starta din kategori
     desc_header: "Du är nästan klar!"
-    desc_html: "Som kategorins koordinator är du ansvarig för att administrera din Loomiokategori. När du har valt inställningar, kan du komma åt din nya kategori, starta diskussioner, samt skicka inbjudningar! <p>För att på enklast möjliga sätt beskriva din kategori, fråga dig själv: Vad vill ni uppnå tillsammans? Vilka typer av beslut kommer ni att fatta? Vem kommer att delta?"
+    desc_html: "Som kategorins koordinator är du ansvarig för att administrera din Loomiokategori. När du har valt inställningar, kan du komma åt din nya kategori, starta goda samtal, samt skicka inbjudningar! <p>För att på enklast möjliga sätt beskriva din kategori, fråga dig själv: Vad vill ni uppnå tillsammans? Vilka typer av beslut kommer ni att fatta? Vem kommer att delta?"
     submit: "Ta mig till min kategori!"
     payment_model:
       header: Lommio är till för alla!
@@ -649,7 +649,7 @@ sv:
         title: "Titel"
         description: "Kontext"
         privacy_public_header: "Öppen"
-        privacy_public_description: "Vem som helst kan se denna diskussionen"
+        privacy_public_description: "Vem som helst kan se detta samtal"
         privacy_private_header: "Sluten"
         privacy_private_description: "Endast medlemmar i %{group} kan se denna diskussionen"
         privacy_hidden_description: "Alla diskussioner i en dold kategori är slutna."
@@ -711,8 +711,8 @@ sv:
   helpers:
     submit:
       discussion:
-        create: "Starta en diskussion"
-        update: "Uppdatera diskussionen"
+        create: "Starta ett gott samtal"
+        update: "Uppdatera samtalet"
       motion:
         create: "Starta ett förslag"
       user:
@@ -720,10 +720,10 @@ sv:
         update: "Uppdatera inställningar"
   email:
     to_join_discussion:
-      subject: "%{who} vill att du går med en diskussion i Loomio"
-      content: "Du har blivit inbjuden att delta i diskussionen: %{discussion}"
+      subject: "%{who} vill att du går med en i ett gott samtal i Loomio"
+      content: "Du har blivit inbjuden att delta i det goda samtalet: %{discussion}"
       message_intro: "%{who} säger:"
-      link: "Gå med i diskussionen"
+      link: "Gå med i samtalet"
     to_join_group:
       subject: "%{member} har bjudit in dig att gå med i  %{group_name} på Loomio"
     to_start_group:
@@ -734,13 +734,13 @@ sv:
     unsubscribe: "Avregistrera dig eller ändra dina emailinställningar:"
     unsubscribe_html: "<a href='%{link_path}'>%{link_text}</a> för att avregistrera eller ändra dina emailinställnignar."
     view_comment: "Klicka här för att se kommentaren på Loomio"
-    view_discussion: "Klicka här för att se denna diskussionen"
+    view_discussion: "Klicka här för att se detta samtal"
     view_group: "Klicka här för att se kategorin på Loomio"
     view_proposal: "Visa detta förslag på Loomio"
     campaign_html: "Var det här beslutet viktigt för dig? Kan du <a href='%{link_path}'> tänka dig att bli en bidragsgivare till Loomio</a> och hjälpa oss att sprida Loomio till världen. Vi är en liten kategori som försöker göra stora saker och vi behöver ditt bidrag för att kunna fortsätta växa!"
     create_discussion:
-      intro: "%{who} startade en ny diskussion i %{which_group}:"
-      subject: "Ny diskussion - %{which}"
+      intro: "%{who} startade en nytt samtal i %{which_group}:"
+      subject: "Nytt samtal - %{which}"
     create_proposal:
       intro: "Ett nytt förslag skapades i en Loomiokategori som du är med i."
       closes_in: "Stänger om"
@@ -766,7 +766,7 @@ sv:
       subject: "%{who} har begärt att få gå med %{which_group}"
       view_group: "Du kan godkänna eller avslå begäran här"
     mentioned:
-      intro: "Du nämndes i en diskussion med titeln:"
+      intro: "Du nämndes i ett samtal med titeln:"
       said: "%{comment_author} sa:"
       subject: "%{who} nämnde dig i %{which}Kategorin i Loomio"
     new_motion_created:
@@ -810,7 +810,7 @@ sv:
   decisions: "Beslut"
   delete: "Ta bort"
   details: "Detaljer"
-  discussions: "Diskussioner"
+  discussions: "Goda samtal"
   edit: "Redigera"
   email_address: "Emailadress"
   enable: "Tillåt"
