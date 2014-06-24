@@ -227,7 +227,6 @@ Loomio::Application.routes.draw do
     match '/third_parties' => redirect('https://www.loomio.org/third_parties')
     match '/try_it' => redirect('https://www.loomio.org/try_it')
     match '/wallets' => redirect('https://www.loomio.org/wallets')
-    match '/tips_och_stod' => redirect('https://godasamtal.samutveckling.se/tips_och_stod')
   end
 
   scope controller: 'help' do
