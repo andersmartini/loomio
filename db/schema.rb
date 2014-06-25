@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140617021219) do
+ActiveRecord::Schema.define(:version => 20140626002400) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -100,17 +100,18 @@ ActiveRecord::Schema.define(:version => 20140617021219) do
     t.string   "title",               :default => ""
     t.text     "body",                :default => ""
     t.string   "subject",             :default => ""
-    t.integer  "user_id",             :default => 0,     :null => false
+    t.integer  "user_id",             :default => 0,         :null => false
     t.integer  "parent_id"
     t.integer  "lft"
     t.integer  "rgt"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "uses_markdown",       :default => false, :null => false
-    t.integer  "comment_votes_count", :default => 0,     :null => false
-    t.integer  "attachments_count",   :default => 0,     :null => false
+    t.boolean  "uses_markdown",       :default => false,     :null => false
+    t.integer  "comment_votes_count", :default => 0,         :null => false
+    t.integer  "attachments_count",   :default => 0,         :null => false
     t.text     "liker_ids_and_names"
     t.datetime "edited_at"
+    t.string   "emotion",             :default => "neutral", :null => false
   end
 
   add_index "comments", ["discussion_id"], :name => "index_comments_on_commentable_id"
@@ -323,7 +324,7 @@ ActiveRecord::Schema.define(:version => 20140617021219) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "privacy",                            :default => "private"
+    t.string   "privacy",                            :default => "public"
     t.string   "members_invitable_by"
     t.integer  "parent_id"
     t.boolean  "email_new_motion",                   :default => true
@@ -348,14 +349,15 @@ ActiveRecord::Schema.define(:version => 20140617021219) do
     t.boolean  "can_start_group",                    :default => true
     t.integer  "category_id"
     t.text     "enabled_beta_features"
-    t.string   "subdomain"
-    t.integer  "theme_id"
     t.boolean  "is_visible_to_public",               :default => false,          :null => false
     t.boolean  "is_visible_to_parent_members",       :default => false,          :null => false
     t.string   "discussion_privacy_options",                                     :null => false
     t.boolean  "members_can_add_members",            :default => false,          :null => false
     t.string   "membership_granted_upon",                                        :null => false
+    t.string   "subdomain"
+    t.integer  "theme_id"
     t.boolean  "email_notification_default",         :default => true,           :null => false
+    t.boolean  "members_can_edit_discussions",       :default => true,           :null => false
     t.string   "cover_photo_file_name"
     t.string   "cover_photo_content_type"
     t.integer  "cover_photo_file_size"
@@ -364,7 +366,6 @@ ActiveRecord::Schema.define(:version => 20140617021219) do
     t.string   "logo_content_type"
     t.integer  "logo_file_size"
     t.datetime "logo_updated_at"
-    t.boolean  "members_can_edit_discussions",       :default => true,           :null => false
     t.boolean  "motions_can_be_edited",              :default => false,          :null => false
     t.boolean  "members_can_edit_comments",          :default => true
   end

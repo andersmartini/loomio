@@ -50,7 +50,9 @@ class Comment < ActiveRecord::Base
       c.attachment_ids = options[:attachments].map{|s| s.to_i}
       c.attachments_count = options[:attachments].count
     end
-    c
+    if options[:emotion].present?
+      c.emotion = options[:emotion]
+    end
   end
 
   def is_edited?
