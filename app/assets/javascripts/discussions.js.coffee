@@ -43,6 +43,29 @@ updateMarkdownSetting = (selected, usesMarkdown) ->
   $(selected).children().first().children().addClass('icon-ok')
   event.preventDefault()
 
+# Add emotion (comments)
+$ ->
+  $('.positive-emotion').click (event) ->
+    $("#comment-emotion").val('positive')
+    $("#symbol").removeClass("fa-meh-o")
+    $("#symbol").removeClass("fa-frown-o")
+    $("#symbol").addClass("fa-smile-o")
+    event.preventDefault()
+
+  $('.neutral-emotion').click (event) ->
+    $("#comment-emotion").val('neutral')
+    $("#symbol").removeClass("fa-smile-o")
+    $("#symbol").removeClass("fa-frown-o")
+    $("#symbol").addClass("fa-meh-o")
+    event.preventDefault()
+
+  $('.negative-emotion').click (event) ->
+    $("#comment-emotion").val('negative')
+    $("#symbol").removeClass("fa-meh-o")
+    $("#symbol").removeClass("fa-smile-o")
+    $("#symbol").addClass("fa-frown-o")
+    event.preventDefault()
+
 #adds bootstrap tooltips to discussion features
 $ ->
   $("#js-dog-ear").tooltip

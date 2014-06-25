@@ -1,14 +1,17 @@
 .dropdown.comment-emoticon-dropdown
   %a.dropdown-toggle{'data-toggle' => 'dropdown', :href => '#'}
-    %i.fa.fa-meh-o 
+    %i.fa.fa-meh-o#symbol
     %i.fa.fa-caret-down
   %ul.dropdown-menu
     %li
-      %i.fa.fa-smile-o
-      Positiv
+      %a{href: '#', class: 'positive-emotion'}
+        %i.fa.fa-smile-o   
+        Positiv
     %li
-      %i.fa.fa-meh-o
-      Neutral
+      %a{href: '#', class: 'neutral-emotion'}
+        %i.fa.fa-meh-o
+        Neutral
     %li
-      %i.fa.fa-frown-o
-      Negativ
+      %a{href: '#', class: 'negative-emotion'}
+        %i.fa.fa-frown-o
+        Negativ
