@@ -10,16 +10,6 @@
         .edit-icon
           %i.fa.fa-pencil
 
-  - logo_url = use_parent_if_blank(@group, :logo).url(:medium)
-
-  .group-logo{style: "background-image: url('#{logo_url}')"}
-    - if can? :edit, @group
-      .upload-button.logo-upload{title: t(:'tooltip.logo_upload')}
-        = form_for @group, html: { multipart: true, class: 'js-submit-on-change' } do |f|
-          = file_field_tag "group[logo]"
-          .edit-icon
-            %i.fa.fa-pencil
-
   .group-title
     %h1.home-title.shadow
       - if @group
@@ -40,7 +30,6 @@
           .edit-icon.edit-description{'data-title' => t(:'tooltip.edit_description')}
             %i.fa.fa-pencil
         .edit-icon-placeholder
-      .logo-placeholder
       ~ render_rich_text(@group.description)
     .main-content
       =render 'discussions/discussion_list'
