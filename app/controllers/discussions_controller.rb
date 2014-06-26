@@ -168,7 +168,8 @@ class DiscussionsController < GroupBaseController
 
   def build_comment
     @comment = Comment.new(body: params[:comment],
-                           uses_markdown: params[:uses_markdown])
+                           uses_markdown: params[:uses_markdown],
+                           emotion: params[:emotion])
 
     attachment_ids = Array(params[:attachments]).map(&:to_i)
 
