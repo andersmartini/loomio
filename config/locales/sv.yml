@@ -880,3 +880,8 @@ sv:
     empty:
       no_discussions: "Det finns inte några samtal i dina kategorier."
       no_discussions_in_group: "Denna kategori har inte några samtal ännu."
+
+  motion_form:
+    new:
+      header: "Nytt förslag"
+      submit: 'Skapa förslag'

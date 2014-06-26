@@ -10,8 +10,3 @@
         - AppTranslation::LANGUAGES.each do |language|
           - link_attrs = AppTranslation.language_link_attributes(language)
           %li= link_to link_attrs[:text], link_attrs[:href], title: link_attrs[:title]
-
-    = link_to t(:translate, default: "help translate Loomio!"), 'https://www.loomio.org/discussions/4896'
-
-  .footer-links
-    = render "footer_links", target: 'blank'
