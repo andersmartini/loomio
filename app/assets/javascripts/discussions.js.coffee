@@ -66,6 +66,13 @@ $ ->
     $("#symbol").addClass("fa-frown-o")
     event.preventDefault()
 
+$ -> # Emotion is mandatory for comments
+  $("#post-new-comment").click (event)->
+    if $("#comment-emotion").val().length == 0
+      alert("Ange med vilken känsla du skriver ditt inlägg.")
+      event.preventDefault()
+      event.stopPropagation()
+
 #adds bootstrap tooltips to discussion features
 $ ->
   $("#js-dog-ear").tooltip
