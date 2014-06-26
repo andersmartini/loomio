@@ -182,7 +182,7 @@ sv:
   edit_discussion_context: "Redigera samtalsinnehållet"
   request_new_group: "Starta en kategori"
   start_new_group: "Starta en ny kategori"
-  start_new_group_hint: "För att börja fatta beslut"
+  start_new_group_hint: "För att börja samtala"
   find_a_group: "Hitta en kategori"
   find_a_group_hint: "För att utforska öppna kategorier"
   no_group_header: "Välkommen till Initiativ Samutvecklings forum (Beta)"
@@ -200,7 +200,7 @@ sv:
   generic_confirm: "Är du säker?"
   discussion_helper_text:
     header: "Välkommen till ditt första samtal"
-    message: "<p>Ämnet syns högst upp på sidan, med innehållet under.</p><p>Samtalet är till vänster och beslut kommer upp till höger. Om du tycker att kategorin är redo att fatta ett beslut kan du göra ett förslag för kategorin att beakta.</p>"
+    message: "<p>Ämnet syns högst upp på sidan, med innehållet under.</p><p>Samtalet är till vänster och förslag kommer upp till höger. Om du tycker att ni är redo samtala om ett förslag, så presentera det för de andra.</p>"
   group_helper_text:
     header: "Välkommen till din nya kategori!"
     message: "<p>Detta är <strong>kategorisidan</strong>. Till vänster finns en lista på kategorins alla samtal.</p><p>När du vill att deltagarna i kategorin ska samtala om ett annat ämne, starta ett nytt gott samtal.</p>"
@@ -300,13 +300,13 @@ sv:
     discussion_title_edited: "ändrade samtalstiteln"
     discussion_description_edited: "ändrade samtalsbeskrivningen"
   discussion: "Samtal"
-  current_decision: "Nuvarande beslut"
-  previous_decisions: "Tidigare beslut"
-  see_previous_decisions: "Se tidigare beslut"
+  current_decision: "Sakfrågan just nu"
+  previous_decisions: "Tidigare förslag"
+  see_previous_decisions: "Se tidigare förslag"
   see_more: "Läs mer"
   create_new_proposal: "Skapa nytt förslag"
-  empty_decision_list_html: "Är ni redo att fatta beslut? <br> Vem som helst kan starta ett förslag."
-  empty_decision_index: "Denna kategori har ännu inte fattat några beslut."
+  empty_decision_list_html: "Vem som helst kan ge ett förslag här!"
+  empty_decision_index: "Denna kategori har ännu inte några förslag"
   empty_discussion_list: "Det finns ännu inga aktiviteter i detta samtal."
   empty_discussion_index: "Det finns inga samtal i någon av dina kategorier"
   empty_discussion_index_group: "Denna kategorin har ännu inte några goda samtal."
@@ -353,12 +353,12 @@ sv:
   yes_position: "Jag håller med"
   yes_details: "Jag håller med om detta och vill att det går vidare"
   abstain_position: "Jag avstår"
-  abstain_details: "Jag är OK med att kategorin fattar beslut utan mig."
+  abstain_details: "Jag är OK med att inte ta ställning."
   no_position: "Jag håller inte med"
   no_details: "Jag tror att vi skulle kunna hitta något bättre än det här."
   block_position: "Jag blockerar"
-  block_details: "Jag har en stark invändning mot detta förslag och det är inte OK från min sida att gå vidare."
-  not_voted: "[Visa medlemmar som ännu inte har beslutat sig]"
+  block_details: "Jag har en stark invändning mot detta förslag."
+  not_voted: "[Visa medlemmar som ännu inte har tagit ställning]"
   outcome_placeholder: "Vad var resultatet av detta förslaget?"
   outcome_submit: "publicera status"
   position_verbs:
@@ -433,16 +433,16 @@ sv:
       en kategori, kan du se alla aktiviteter i alla dina kategorier samtidigt på startsidan.</p>
       <p>Du kommer även att få ett email när viktiga saker händer i din kategori.
       Du kan ändra dina emailinställningar <a href="%{link}"">här</a>.</p>
-    make_a_decision: "Fatta ett beslut"
-    make_a_decision_description: "När kategorin är redo att fatta beslut, kan vem som helst göra ett förslag. Ange tydligt vad som bör göras och även en kort bakgrund så att alla förstår precis vad det innebär att hålla med eller att inte hålla med."
+    make_a_decision: "Ta ställning"
+    make_a_decision_description: "Vem som helst göra ett förslag. Ange tydligt vad förslaget gäller samt kort bakgrund så att alla förstår precis vad det innebär att hålla med eller att inte hålla med."
     prompt_people_details: "Om du vill få uppmärksamheten från en person i din kategori, skriv '@' följt av deras namn. De kommer då att få ett email som informerar dem att du har nämnt dem i en kommentar."
     prompt_people_html: "Uppmärksamma en person med <span class='blue'>@mentions</span>"
     positions_agree_description: "<span>Håller med</span> innebär att du gillar förslaget."
     positions_abstain_description: "<span>Avstår</span> innebär att du är osäker, eller kan tänka dig att låta kategorin fatta beslutet utan dig."
     positions_disagree_description: "<span>Håller inte med</span> innebär att du tror att det kan finnas ett bättre alternativ, men att du kan tänka dig att foga dig i kategorins beslut."
     positions_block_description: "<span>Blockerar</span> innebär att du har allvarliga invändningar och att du skulle bli mycket missnöjd om detta förslag gick igenom."
-    start_discussion: "Starta en engagerande diskussion"
-    start_discussion_html: "<p>När du startar en ny diskussion, se till att titeln förmedlar ämnet kortfattat .\nAnvänd Context Panel för att ge all bakgrundsinformation som är nödvändig \nför att kategorin ska få en produktiv och givande diskussion.</p>\n<p>Under diskussionens gång kan Context Panel uppdateras närhelst ny information\ntillkommer. Förutom att klargöra ämnet, kan\
+    start_discussion: "Starta ett engagerande samtal"
+    start_discussion_html: "<p>När du startar en nytt samtal, se till att titeln förmedlar ämnet kortfattat .\nAnvänd Context Panel för att ge all bakgrundsinformation som är nödvändig \nför att kategorin ska få en produktiv och givande diskussion.</p>\n<p>Under diskussionens gång kan Context Panel uppdateras närhelst ny information\ntillkommer. Förutom att klargöra ämnet, kan\
       \ du använda detta utrymme till att\ndela resurser, summera diskussionens utveckling, eller beskriva de beslutssätt\ndin kategori använder.</p>\n"
     start_proposal: "Hur du skriver ett tydligt förslag"
     start_proposal_html: "<p>Om titeln är tydlig och kortfattad kommer deltagarna direkt att förstå \nvad det är ni ska bli överens eller inte överens om. </p>\n<p>Det gör inget att ett förslag inte skulle komma direkt till en tydlig överenskommelse.\nOm kategorin inte gillar det första förslaget, kan vem som helst komma med ett nytt förslag för att\nta med uppkomna invändningar\
@@ -452,7 +452,7 @@ sv:
     video_tutorial_description: "Se videon för en snabb demonstration av hur Loomio fungerar."
   hint:
     context: 'Tips för att använda Context Panel'
-    discussion: 'Tips för att starta en engagerande diskussion'
+    discussion: 'Tips för att starta ett engagerande samtal'
     invitation: 'Tips för att skriva en bra inbjudan'
     proposal: 'Tips för att skriva ett tydligt förslag'
     vote: 'Du kan ändra din ståndpunkt när som helst'
@@ -807,7 +807,7 @@ sv:
   closing: "Stänger"
   closed: "Stängd"
   coordinator: "Koordinator"
-  decisions: "Beslut"
+  decisions: "Förslag"
   delete: "Ta bort"
   details: "Detaljer"
   discussions: "Goda samtal"
