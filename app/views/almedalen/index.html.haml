@@ -13,33 +13,22 @@
   %body{class: "#{controller_name} #{action_name}"}
     - analytics_scope do
       = render 'google_tag_manager'
-    = render 'flash_messages'
+    -#= render 'flash_messages'
 
     .container-fluid
-      %nav.navbar.navbar-default
-        .content
-          .navbar-header
-            = link_to image_tag("islogo.png"), root_path, class: 'navbar-brand', alt: 'Loomio'
-          %ul.nav.navbar-nav.navbar-right
-            %li
-              %a{href: 'https://github.com/loomio/loomio'}
-                %i.fa.fa-github
-            %li= link_to t(:'frontpage.link.log_in'), new_user_session_path, class: 'btn btn-orange'
-
       .row.product
         .content
           %div.big
             #godasamtalet
             %h1 
-              Almedalens goda samtal
-            %h2
+              Almedalens goda samtal 
+              %br
               Samhällets kärna är samarbete.
             %h2
               Välkommen till Almedalsveckans goda samtal på nätet!
-            %a{href: '/users/sign_in'} 
+            %a{href: '/users/sign_in', class: "btn btn-info btn-large"} 
               Logga in 
-            eller
-            %a{href: '/users/sign_up'} 
+            %a{href: '/users/sign_up', class: "btn btn-info btn-large"} 
               Registrera dig
 
   = javascript_include_tag "marketing"
