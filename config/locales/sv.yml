@@ -185,7 +185,7 @@ sv:
   start_new_group_hint: "För att börja samtala"
   find_a_group: "Hitta en kategori"
   find_a_group_hint: "För att utforska öppna kategorier"
-  no_group_header: "Välkommen till Initiativ Samutvecklings forum (Beta)"
+  no_group_header: "Välkommen till almedalens goda samtal"
   empty_notifications: "Du har inte fått några notifieringar ännu."
   see_all_notifications: "Se alla notifieringar"
   profile: "Profil"
@@ -256,6 +256,8 @@ sv:
   membership_requested: "Förfrågan om medlemskap"
   request_membership: "Medlemsförfrågan"
   ask_to_join_group: "Be att få gå med"
+  join_group_btn: "Gå med"
+  you_have_joined_group: Du har gått med i %{group_name}
   confirm_remove_membership_request: "Är du säker på att du vill ta tillbaka din medlemsförfrågan till denna kategorin?"
   no_pending_membership_requests: "Det finns för tillfället inga utestående medlemsförfrågningar för denna kategori."
   subgroups: "Underkategorier"

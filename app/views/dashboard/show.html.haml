@@ -18,10 +18,9 @@
         = link_to t(:see_previous_decisions), motions_path, class: 'bottom-panel-link'
 - else
   %h1= t(:no_group_header)
+  %span Gå till <i>Tips & Stöd</i> för att lära dig mer om almedalens goda samtal, eller klicka på <i>Hitta en kategori</i> för att delta direkt!
   .no-groups.row
     .span3.actions
-      .action-button= link_to t(:start_new_group), new_group_path, class: 'btn btn-large btn-primary btn-block'
-      .intro-desc= t(:start_new_group_hint)
+      .action-button= link_to "Tips & Stöd", tips_och_stod_path, class: 'btn btn-large btn-info btn-block'
     .span3.actions
-      .action-button= link_to t(:find_a_group), explore_path, class: 'btn btn-large btn-success btn-block'
-      .intro-desc= t(:find_a_group_hint)
+      .action-button= link_to "Hitta en kategori", explore_path, class: 'btn btn-large btn-info btn-block'
