@@ -1,3 +1,20 @@
+.pages-nav-logo{
+  display: block;
+  width: 136px;
+  height: 36px;
+  background: image-url("logo-orange.png") 0 0 no-repeat;
+}
+.app-logo{
+  width: 93px;
+  margin: 9px 0 0 10px;
+  height: 28px;
+  background: image-url("islogo.png") 0 0 no-repeat;
+}
+.app-logo.beta{
+  background: image-url("islogo.png") 0 0 no-repeat;
+}
+
+
 .dropdown-menu {
   a {
     clear: both;
@@ -19,13 +36,6 @@
     padding-top: 2px;
     color: #968D90;
   }
-}
-
-.main-container {
-  margin: auto;
-  background-color: $container;
-  min-height: 100%;
-  padding: 40px 20px 20px 20px;
 }
 
 .toolbar-navigation {
@@ -103,13 +113,11 @@
         border-left: 1px solid #ccc;
         border-right: none;
         display: inline-block;
-        @include ie7-inline-block();
         @include box-shadow(0, 1px, 1px, 0, rgba(0,0,0,.07) inset);
       }
       body { color: #fff; }
       .control-group {
         display: inline-block;
-        @include ie7-inline-block();
         margin-bottom: 8px;
         input {
           border-left: none;

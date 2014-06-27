@@ -582,7 +582,7 @@ ActiveRecord::Schema.define(:version => 20140626002400) do
     t.string   "time_zone"
     t.string   "key"
     t.string   "detected_locale"
-    t.boolean  "subscribed_to_missed_yesterday_email",                        :default => false,      :null => false
+    t.boolean  "subscribed_to_missed_yesterday_email",                        :default => true,       :null => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

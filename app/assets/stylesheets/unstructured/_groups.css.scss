@@ -97,7 +97,7 @@ body.groups {
       height: 34px;
     }
     .main-content{
-      width: 700px;
+      width: 100%;
       float: left;
     }
     .sidebar {
@@ -105,29 +105,10 @@ body.groups {
       float: left;
       margin-left: 20px;
     }
-    .group-options {
-      width: 200px;
-      .dropdown-menu {
-        min-width: 216px;
-        margin-top: 0;
-        left: 0;
-      }
-    }
     #group-actions {
       margin: 20px 0 15px 0;
     }
     .heart-icon {color: red;}
-
-    #members-panel {
-      h4 a{color: $text-black;}
-      .dropdown-menu {
-        min-width: 205px;
-        margin-top: 0;
-      }
-      .memberships_link {
-        margin-bottom: 10px;
-      }
-    }
     #request-membership {
       form { display: inline; }
       .btn {
@@ -183,8 +164,6 @@ body.groups {
     .previous-discussions-panel {
       .previous-decision-title {
         &:hover { color: $dark-grey; }
-        float: right;
-        width: 164px;
       }
 
       ul.previous-decisions {
@@ -229,7 +208,6 @@ body.groups {
 
 .name-separator {
   display: inline-block;
-  @include ie7-inline-block();
   width: 15px;
   position: relative;
   bottom: 2px;

@@ -5,6 +5,8 @@ Loomio::Application.routes.draw do
   
   root :to => 'almedalen#index'
 
+  root :to => 'marketing#index'
+
   namespace :admin do
     resource :email_groups, only: [:create, :new]
     resources :stats, only: [] do
@@ -176,6 +178,7 @@ Loomio::Application.routes.draw do
     scope module: :email_preferences do
       get '/email_preferences', action: 'edit',   as: :email_preferences
       put '/email_preferences', action: 'update', as: :update_email_preferences
+      get '/mark_summary_email_as_read', action: 'mark_summary_email_as_read', as: :mark_summary_email_as_read
     end
   end
 

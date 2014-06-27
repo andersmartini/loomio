@@ -1,14 +1,14 @@
 - if current_user.parent_groups.present?
   .row
-    .span9
+    .col-md-9
       .group-title
         %h1.home-title.dash
           = link_to t(:home), dashboard_path
       .row
-        .span9.main-content
+        .col-md-9.main-content
           =render 'discussions/discussion_list'
 
-    %section.span3
+    %section.col-md-3
       #group-actions
         .clearfix
           = icon_button(href: new_discussion_path, text: t(:start_a_discussion), icon: '/assets/topic-18.png', id: 'start-new-discussion', class: 'btn-grey')
@@ -20,7 +20,7 @@
   %h1= t(:no_group_header)
   %span Gå till <i>Tips & Stöd</i> för att lära dig mer om almedalens goda samtal, eller klicka på <i>Hitta en kategori</i> för att delta direkt!
   .no-groups.row
-    .span3.actions
-      .action-button= link_to "Tips & Stöd", tips_och_stod_path, class: 'btn btn-large btn-info btn-block'
-    .span3.actions
-      .action-button= link_to "Hitta en kategori", explore_path, class: 'btn btn-large btn-info btn-block'
+    .col-md-3.actions
+      .action-button= link_to "Tips & Stöd", tips_och_stod_path, class: 'btn btn-default btn-lg btn-info btn-block'
+    .col-md-3.actions
+      .action-button= link_to "Hitta en kategori", explore_path, class: 'btn btn-default btn-lg btn-info btn-block'

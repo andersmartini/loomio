@@ -182,6 +182,10 @@ en:
   organisation:
     name: "Loomio"
 
+  # Text for screenreaders
+  sr:
+    toggle_navigation: "Toggle navigation"
+
   footer:
     about: 'About'
     blog: 'Blog'
@@ -363,6 +367,7 @@ en:
 
   email_group_members: "Email group members"
   edit_group_settings: "Edit group settings"
+  manage_members: "Manage members"
   leave_group: "Leave group"
   confirm_leave_hidden_group: "Are you sure you wish to leave %{which_group}? You will also be removed from any subgroups."
   confirm_leave_group: "Are you sure you wish to leave %{which_group}?"
@@ -886,6 +891,7 @@ en:
     header: "Email preferences"
     daily_activity_summary: "Daily Activity Summary"
     daily_activity_subscription: "Send me a daily activity email summarising what’s been happening in my groups"
+    missed_yesterday_subscription: "Send me 'Yesterday on Loomio' - my unread content from the past 24 hours"
     global_notifications: "Global Notifications"
     proposal_closing_soon_subscription: "Remind me 24 hours before a proposal closes"
     mentions_subscription: "Email me when someone mentions me in a comment"
@@ -1006,8 +1012,14 @@ en:
       intro: "Showing you what’s been happening in your Loomio groups in the last 24 hours"
       subject: "Loomio - Summary of the last 24 hours"
     missed_yesterday:
-      subject: "Here's what you missed on Loomio yesterday"
-      title: "Here's what you missed on Loomio yesterday"
+      subject: "Yesterday on Loomio"
+      mark_as_read: Mark as read
+      thanks_for_reading: Thanks for reading, have a great day!
+      click_here_to_mark_all_as_read_html: |
+        Here's the stuff that happened yesterday on Loomio.
+        Once you've read it, click <a href="%{link}">mark as read</a> to remove it from your Loomio Inbox.
+      marked_as_read_success: "Everything from the email has been marked as read"
+
     group_email:
       intro: "%{who} made an announcement to %{group}:"
     group_membership_approved:

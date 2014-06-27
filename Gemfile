@@ -20,7 +20,7 @@ gem 'client_side_validations'
 gem 'client_side_validations-simple_form'
 gem 'jqplot-rails', '~> 0.3'
 gem 'rails-backbone', '~> 0.7.2'
-gem 'cancan', '~> 1.6.10'
+gem 'cancancan', '~> 1.8'
 gem 'draper', '~> 0.11.1'
 gem 'rmagick', '~> 2.13.1'
 gem 'gravtastic', '~> 3.2.6'
@@ -57,13 +57,15 @@ gem 'browser'
 gem 'activerecord-postgres-hstore'
 gem 'intercom'
 gem 'intercom-rails', '~> 0.2.24'
+gem 'bootstrap-sass', '~> 3.1.1'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'coffee-rails', '~> 3.2.2'
-  gem 'sass-rails', '~> 3.2.6'
-  gem 'bootstrap-sass', '~> 2.3.2.2' # Bootstrap 2
+  gem 'sprockets-rails', '=2.0.0.backport1'
+  gem 'sprockets', '=2.2.2.backport2'
+  gem 'sass-rails', github: 'guilleiguaran/sass-rails', branch: 'backport'
   gem 'uglifier', '~> 2.2.1'
   gem 'modernizr-rails', '~> 2.6.2'
   gem 'jquery-fileupload-rails', '~> 0.4.1'
@@ -112,6 +114,7 @@ group :test do
 end
 
 group :staging, :production do
+  gem 'delayed-plugins-airbrake'
   gem 'memcachier', '~> 0.0.2'
   gem 'dalli', '~> 2.7.0'
   gem 'newrelic_rpm', '~> 3.7.3'

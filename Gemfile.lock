@@ -17,6 +17,16 @@ GIT
       ransack (~> 1.0)
       sass-rails
 
+GIT
+  remote: git://github.com/guilleiguaran/sass-rails.git
+  revision: 0393d9e1a6e4a776e61f16fb75f97971b9f4abd2
+  branch: backport
+  specs:
+    sass-rails (4.0.1)
+      railties (>= 3.2.0, < 5.0)
+      sass (>= 3.2.0)
+      sprockets-rails (~> 2.0.0.backport1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -73,7 +83,7 @@ GEM
       json (~> 1.8.0)
       nokogiri (~> 1.6.0)
       savon (~> 2.0)
-    bootstrap-sass (2.3.2.2)
+    bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
     bourbon (4.0.2)
       sass (~> 3.3)
@@ -84,7 +94,7 @@ GEM
       activesupport
       uniform_notifier (~> 1.6.0)
     callsite (0.0.11)
-    cancan (1.6.10)
+    cancancan (1.8.2)
     capistrano (3.0.1)
       i18n
       rake (>= 10.0.0)
@@ -144,6 +154,9 @@ GEM
     dalli (2.7.2)
     database_cleaner (1.1.1)
     debug_inspector (0.0.2)
+    delayed-plugins-airbrake (1.1.0)
+      airbrake
+      delayed_job
     delayed_job (4.0.1)
       activesupport (>= 3.0, < 4.2)
     delayed_job_active_record (4.0.1)
@@ -454,10 +467,6 @@ GEM
     rubyzip (0.9.9)
     safe_yaml (1.0.3)
     sass (3.3.8)
-    sass-rails (3.2.6)
-      railties (~> 3.2.0)
-      sass (>= 3.1.10)
-      tilt (~> 1.3)
     savon (2.5.1)
       akami (~> 1.2.0)
       builder (>= 2.1.2)
@@ -490,11 +499,15 @@ GEM
     spork-rails (3.2.1)
       rails (>= 3.0.0, < 3.3.0)
       spork (>= 1.0rc0)
-    sprockets (2.2.2)
+    sprockets (2.2.2.backport2)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    sprockets-rails (2.0.0.backport1)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      sprockets (~> 2.2.2.backport2)
     sshkit (1.5.1)
       colorize
       net-scp (>= 1.1.2)
@@ -563,10 +576,10 @@ DEPENDENCIES
   better_errors (~> 1.0.1)
   binding_of_caller (~> 0.7.2)
   bing_translator (~> 4.2.0)
-  bootstrap-sass (~> 2.3.2.2)
+  bootstrap-sass (~> 3.1.1)
   browser
   bullet
-  cancan (~> 1.6.10)
+  cancancan (~> 1.8)
   capistrano (~> 3.0.0)
   capybara (~> 2.1.0)
   client_side_validations
@@ -578,6 +591,7 @@ DEPENDENCIES
   cucumber-rails (~> 1.4.0)
   dalli (~> 2.7.0)
   database_cleaner (~> 1.1.1)
+  delayed-plugins-airbrake
   delayed_job_active_record (~> 4.0.0)
   devise (~> 3.2.0)
   draper (~> 0.11.1)
@@ -640,12 +654,14 @@ DEPENDENCIES
   rspec-rails (~> 2.14.0)
   ruby-prof
   ruby-progressbar (~> 1.4.1)
-  sass-rails (~> 3.2.6)
+  sass-rails!
   selenium-webdriver (~> 2.35.1)
   sequenced (~> 1.5.0)
   shoulda-matchers (~> 2.3.0)
   simple_form (~> 2.1.1)
   spork-rails (~> 3.2.1)
+  sprockets (= 2.2.2.backport2)
+  sprockets-rails (= 2.0.0.backport1)
   strong_parameters (~> 0.2.3)
   thin (~> 1.5.1)
   timecop (~> 0.6.3)

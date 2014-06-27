@@ -13,4 +13,10 @@ module EmailHelper
 
     @markdown_email_parser ||= Redcarpet::Markdown.new(EmailMarkdownRenderer, autolink: true)
   end
+
+  def mark_summary_as_read_url_for(user)
+    mark_summary_email_as_read_url(unsubscribe_token: user.unsubscribe_token,
+                                   time_start: @time_start.utc.to_i,
+                                   time_finish: @time_finish.utc.to_i)
+  end
 end
