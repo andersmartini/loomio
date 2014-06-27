@@ -15,9 +15,9 @@ class ApplicationController < ActionController::Base
   before_filter :set_application_locale
   before_filter :save_selected_locale, if: :user_signed_in?
 
-  before_filter :ensure_domain
-  before_filter :force_ssl
-  APP_DOMAIN = 'godasamtal.samutveckling.se'
+  # before_filter :ensure_domain
+  # before_filter :force_ssl
+  # APP_DOMAIN = 'godasamtal.samutveckling.se'
 
   around_filter :user_time_zone, if: :user_signed_in?
 
@@ -40,19 +40,19 @@ class ApplicationController < ActionController::Base
     request.subdomain.gsub(/^www./, '')
   end
 
-  protected
-  def force_ssl
-    if Rails.env.production?
-      redirect_to :protocol => 'https' unless request.ssl?
-    end
-  end
+  # protected
+  # def force_ssl
+  #   if Rails.env.production?
+  #     redirect_to :protocol => 'https' unless request.ssl?
+  #   end
+  # end
 
-  def ensure_domain
-    if Rails.env.production? && ((request.env['HTTP_HOST'] != APP_DOMAIN) )
-      # HTTP 301 is a "permanent" redirect
-      redirect_to( "https://#{APP_DOMAIN}", :status => 301) and return
-    end
-  end
+  # def ensure_domain
+  #   if Rails.env.production? && ((request.env['HTTP_HOST'] != APP_DOMAIN) )
+  #     # HTTP 301 is a "permanent" redirect
+  #     redirect_to( "https://#{APP_DOMAIN}", :status => 301) and return
+  #   end
+  # end
 
 
   def increment_measurement
