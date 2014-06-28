@@ -27,6 +27,6 @@ class PagesController < ApplicationController
   end
 
   def tips
-    render :tips_och_stod, layout: "application"
+    render :tips, layout: "application"
   end
 end
