@@ -7,6 +7,8 @@ Loomio::Application.routes.draw do
 
   root :to => 'marketing#index'
 
+  get "/tips", to: "almedalen#tips"
+
   namespace :admin do
     resource :email_groups, only: [:create, :new]
     resources :stats, only: [] do

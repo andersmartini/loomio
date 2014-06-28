@@ -6,4 +6,7 @@ class AlmedalenController < ApplicationController
     render layout: false
   end
 
+  def tips
+  	render layout: "application"
+  end
 end
