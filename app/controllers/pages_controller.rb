@@ -26,7 +26,7 @@ class PagesController < ApplicationController
   def try_it
   end
 
-  def tips_och_stod
+  def tips
     render :tips_och_stod, layout: "application"
   end
 end

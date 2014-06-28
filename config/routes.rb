@@ -217,7 +217,7 @@ Loomio::Application.routes.draw do
       get :try_it
       get :wallets
       get :browser_not_supported
-      get :tips_och_stod
+      get :tips
     end
   end
 
