@@ -4,9 +4,6 @@ Loomio::Application.routes.draw do
   ActiveAdmin.routes(self)
   
   root :to => 'almedalen#index'
-
-  root :to => 'marketing#index'
-
   get "/tips", to: "almedalen#tips"
 
   namespace :admin do
