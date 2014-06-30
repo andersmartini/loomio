@@ -677,7 +677,7 @@ pre{
   .activity-count {
     font-size: $font-tinywiny;
     position: relative;
-    bottom: 180px;
+    bottom: 8px;
     left: 16px;
     color: white;
     background-color: $group-activity;
@@ -685,7 +685,7 @@ pre{
   .icon.shim {
     display: block;
     float: right;
-    margin-top: -30px;
+    margin-top: 6px;
     .activity-count {
       bottom: 32px;
     }
