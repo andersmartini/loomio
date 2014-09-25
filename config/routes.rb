@@ -17,6 +17,9 @@ Loomio::Application.routes.draw do
     resources :comments, only: :create
   end
 
+  constraints(MainDomainConstraint) do
+    root :to => 'marketing#index'
+  end
 
   get "/explore", to: 'explore#index', as: :explore
   get "/explore/search", to: "explore#search", as: :search_explore
@@ -106,10 +109,6 @@ Loomio::Application.routes.draw do
   constraints(GroupSubdomainConstraint) do
     get '/' => 'groups#show'
     patch '/' => 'groups#update'
-  end
-
-  constraints(MainDomainConstraint) do
-    root :to => 'marketing#index'
   end
 
   delete 'membership_requests/:id/cancel', to: 'groups/membership_requests#cancel', as: :cancel_membership_request
