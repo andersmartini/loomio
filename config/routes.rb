@@ -17,9 +17,7 @@ Loomio::Application.routes.draw do
     resources :comments, only: :create
   end
 
-  constraints(MainDomainConstraint) do
-    root :to => 'marketing#index'
-  end
+  root :to => 'marketing#index'
 
   get "/explore", to: 'explore#index', as: :explore
   get "/explore/search", to: "explore#search", as: :search_explore
