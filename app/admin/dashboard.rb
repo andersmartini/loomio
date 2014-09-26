@@ -50,6 +50,7 @@ def print_active_users()
   else
     dummy = "<div></div>"
   end
+ end
 
 ActiveAdmin.register_page "Dashboard" do
 
