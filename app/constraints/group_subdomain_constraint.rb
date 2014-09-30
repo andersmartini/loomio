@@ -1,6 +1,10 @@
 class GroupSubdomainConstraint
   def self.matches?(request)
-    request.subdomain.present? && (request.subdomain != 'www')
+    if ENV['HOST_SUBDOMAIN']
+       request.subdomain.present? && (request.subdomain != ENV['HOST_SUBDOMAIN'])
+    else
+    	request.subdomain.present? && (request.subdomain != 'www')
+    end
   end
 end
 
