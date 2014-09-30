@@ -82,6 +82,7 @@ Loomio::Application.configure do
   }
 
   # Store avatars on Amazon S3
+  if ENV['AWS_ACCESS_KEY_ID']
   config.paperclip_defaults = {
     :storage => :fog,
     :fog_credentials => {
@@ -92,5 +93,6 @@ Loomio::Application.configure do
     :fog_directory => ENV['AWS_UPLOADS_BUCKET'],
     :fog_public => true
   }
+  end
 
 end
