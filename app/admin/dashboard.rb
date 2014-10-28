@@ -36,7 +36,7 @@ def print_active_users()
         M.action_year DESC,
         M.action_month DESC
     })
-   if counts.include?(0)
+ if counts.include?(0)
     current_month_active = counts[0]['active_users']
     month_totals = []
     month_totals << "<h1> #{current_month_active} </h1><table>"
