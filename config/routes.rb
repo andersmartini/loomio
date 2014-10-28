@@ -17,7 +17,6 @@ Loomio::Application.routes.draw do
     resources :comments, only: :create
   end
 
-  root :to => 'marketing#index'
 
   get "/explore", to: 'explore#index', as: :explore
   get "/explore/search", to: "explore#search", as: :search_explore
@@ -107,6 +106,10 @@ Loomio::Application.routes.draw do
   constraints(GroupSubdomainConstraint) do
     get '/' => 'groups#show'
     patch '/' => 'groups#update'
+  end
+
+  constraints(MainDomainConstraint) do
+    root :to => 'marketing#index'
   end
 
   delete 'membership_requests/:id/cancel', to: 'groups/membership_requests#cancel', as: :cancel_membership_request
@@ -301,7 +304,6 @@ Loomio::Application.routes.draw do
   get '/press'      => redirect('http://blog.loomio.org/press-pack')
   get '/press-pack' => redirect('http://blog.loomio.org/press-pack')
   get '/roadmap'    => redirect('https://trello.com/b/tM6QGCLH/loomio-roadmap')
-  get '/community'  => redirect('https://www.loomio.org/g/WmPCB3IR/loomio-community')
   get '/timeline'   => redirect('http://www.tiki-toki.com/timeline/entry/313361/Loomio')
 
   get '/robots'     => 'robots#show'
